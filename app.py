@@ -74,5 +74,9 @@ def login():
         return redirect(url_for('home'))
     return render_with_base_templates(content_template='templates_base/content.html', current_path='/login')
 
+"""
+comentarios de prueba para github en rama dev_Gustavo
+"""
+
 if __name__ == '__main__':
     app.run(debug=True)
