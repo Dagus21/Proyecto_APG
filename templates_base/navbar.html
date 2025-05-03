@@ -1,0 +1,8 @@
+<nav>
+    <ul>
+        <li><a href="/" {% if request.path == '/' %}class="current"{% endif %}>Inicio</a></li>
+        <li><a href="/f1" {% if request.path == '/f1' %}class="current"{% endif %}>Funcionalidad 1</a></li>
+        <li><a href="/f2" {% if request.path == '/f2' %}class="current"{% endif %}>Funcionalidad 2</a></li>
+        <li><a href="/login" {% if request.path == '/login' %}class="current"{% endif %}>Login</a></li>
+    </ul>
+</nav>

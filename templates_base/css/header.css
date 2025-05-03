@@ -1,0 +1,28 @@
+/* Header Styles */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo span {
+    color: #e8491d;
+} 
