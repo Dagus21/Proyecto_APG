@@ -1,0 +1,21 @@
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [main_test.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+[32mINFO    [0m APG_SUCCESS:log.py:135 [SUCCESS] [python.py] Se encontraron 2 tablas.
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py] 
+📄 Tabla: public.detalle_usuarios
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - id_detalle_usuarios (integer, NULLABLE: NO)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - id_usuario (integer, NULLABLE: NO)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - contrasena (text, NULLABLE: NO)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - token (text, NULLABLE: YES)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - grupo (integer, NULLABLE: NO)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - email (character varying, NULLABLE: NO)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - estado_cuenta (boolean, NULLABLE: NO)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     🔑 PRIMARY KEY: id_detalle_usuarios
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py] 
+📄 Tabla: public.usuarios
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - id_usuario (integer, NULLABLE: NO)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - nick_name (character varying, NULLABLE: NO)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     - fecha (date, NULLABLE: NO)
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py]     🔑 PRIMARY KEY: id_usuario
+[32mINFO    [0m APG_SUCCESS:log.py:135 [SUCCESS] [python.py] Exploración de estructura completada correctamente.
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [main_test.py] Conexión con la base de datos cerrada correctamente.
+[32mINFO    [0m APG_INFO:log.py:99 [INFO] [python.py] Exploración finalizada.

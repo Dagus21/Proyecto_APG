@@ -1,0 +1,10 @@
+[INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+[INFO] [main_test.py] Iniciando inserción de nuevo usuario y detalle...
+[INFO] [main_test.py] Usuario creado con ID: 6
+[SUCCESS] [main_test.py] Usuario y detalle insertados correctamente.
+[INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+[INFO] [main_test.py] Transacción de creación de usuario finalizada.
+{'status': 201, 'mensaje': 'Usuario creado exitosamente.', 'data': {'id_usuario': 6}}
+[INFO] [python.py] Usuario creado correctamente.
+[SUCCESS] [python.py] CRUD test ejecutado correctamente.
+[INFO] [python.py] CRUD test finalizado.
