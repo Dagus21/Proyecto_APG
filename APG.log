@@ -105,3 +105,188 @@
 2025-05-04 02:05:34,321 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Proceso de login finalizado.
 2025-05-04 02:05:34,323 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Test de login ejecutado correctamente.
 2025-05-04 02:05:34,323 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Test de login finalizado.
+2025-05-04 14:49:25,267 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 14:49:25,272 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfExQ.GoMO1d3bh466wkljRTNe6z_ZOzQ
+2025-05-04 14:49:25,279 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error al enviar correo: cannot import name 'mail' from 'app' (C:\Users\USER\Documents\Unipamplona\Semestre_10\Seguridad  Informatica\Proyecto_APG\Proyecto_APG\app.py)
+2025-05-04 14:49:25,279 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ El envío de correo no fue exitoso.
+2025-05-04 14:49:25,281 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: 
+2025-05-04 14:52:25,074 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 14:52:25,076 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfFeQ.sJ1cABuLf20RbqRrGWyp4C0tixo
+2025-05-04 14:52:25,084 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error al enviar correo: cannot import name 'mail' from 'app' (C:\Users\USER\Documents\Unipamplona\Semestre_10\Seguridad  Informatica\Proyecto_APG\Proyecto_APG\app.py)
+2025-05-04 14:52:25,086 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ El envío de correo no fue exitoso.
+2025-05-04 14:52:25,088 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: 
+2025-05-04 14:55:38,612 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 14:55:38,612 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfGOg.7MAkyIKaY1LC40_eHaZ_b8IjIR0
+2025-05-04 14:55:38,618 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error al enviar correo: cannot import name 'mail' from 'app' (C:\Users\USER\Documents\Unipamplona\Semestre_10\Seguridad  Informatica\Proyecto_APG\Proyecto_APG\app.py)
+2025-05-04 14:55:38,620 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ El envío de correo no fue exitoso.
+2025-05-04 14:55:38,622 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: 
+2025-05-04 15:00:00,598 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 15:00:00,606 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfHQA.GXcMRwoVxsOVJz2UXG5EGuaZVSw
+2025-05-04 15:00:03,926 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error al enviar correo: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-708c4680d24sm18056727b3.75 - gsmtp')
+2025-05-04 15:00:03,928 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ El envío de correo no fue exitoso.
+2025-05-04 15:00:03,928 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: 
+2025-05-04 15:00:50,348 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 15:00:50,355 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfHcg.5r92bwGaimxajJ_4qq7cITElA80
+2025-05-04 15:00:53,522 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error al enviar correo: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 3f1490d57ef6-e755e7a873csm1656251276.43 - gsmtp')
+2025-05-04 15:00:53,522 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ El envío de correo no fue exitoso.
+2025-05-04 15:00:53,522 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: 
+2025-05-04 15:01:51,175 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 15:01:51,177 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfHrw.Xc1H0gwfinxrnF5B0HL-fHaTT-0
+2025-05-04 15:01:54,178 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error al enviar correo: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-708c3f08040sm18163487b3.5 - gsmtp')
+2025-05-04 15:01:54,180 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ El envío de correo no fue exitoso.
+2025-05-04 15:01:54,182 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: 
+2025-05-04 15:05:46,937 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 15:05:46,952 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfImg._2ReyuYrRL5wgLl6rNK7klBulMM
+2025-05-04 15:05:50,140 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error al enviar correo: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-708c3f3cebbsm18304277b3.29 - gsmtp')
+2025-05-04 15:05:50,142 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ El envío de correo no fue exitoso.
+2025-05-04 15:05:50,142 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: 
+2025-05-04 15:07:00,607 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 15:07:00,607 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfI5A.A4Wi1rIxXnw__4ZnO4Qgyz_H5gE
+2025-05-04 15:07:03,636 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error al enviar correo: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-05-04 15:07:03,642 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ El envío de correo no fue exitoso.
+2025-05-04 15:07:03,642 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: 
+2025-05-04 15:08:27,906 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 15:08:27,912 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfJOw.aH__cKvpLECd55Jq6s__tYYvLdU
+2025-05-04 15:08:32,228 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Correo de verificación enviado correctamente a 'carjisar@gmail.com'.
+2025-05-04 15:08:32,228 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ El envío de correo no fue exitoso.
+2025-05-04 15:08:32,234 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: 
+2025-05-04 15:18:51,964 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 15:18:51,964 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Verificando existencia de usuario...
+2025-05-04 15:18:52,341 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Login exitoso.
+2025-05-04 15:18:52,344 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 15:18:52,344 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Proceso de login finalizado.
+2025-05-04 15:18:52,344 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Test de login ejecutado correctamente.
+2025-05-04 15:18:52,349 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 🧪 Test de login finalizado.
+2025-05-04 15:18:52,354 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 15:18:52,359 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfLrA.OjYWltPIfI6adJpEozarArTVBmc
+2025-05-04 15:18:58,194 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Correo de verificación enviado correctamente a 'carjisar@gmail.com'.
+2025-05-04 15:18:58,194 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Test de envío de correo ejecutado correctamente.
+2025-05-04 15:18:58,201 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 🧪 Test de envío de correo finalizado.
+2025-05-04 15:18:58,203 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 15:18:58,204 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfLsg.67eZz4LsUrPrUJ6xeBPj_dA4xBI
+2025-05-04 15:19:02,366 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Correo de verificación enviado correctamente a 'carjisar@gmail.com'.
+2025-05-04 15:19:02,368 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando verificación de token...
+2025-05-04 15:19:02,390 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Token válido para correo 'carjisar@gmail.com'. Procediendo a activar cuenta...
+2025-05-04 15:19:03,120 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 15:19:03,144 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Iniciando actualización del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-04 15:19:03,415 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-04 15:19:03,507 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [GestionLogin.py] Usuario actualizado correctamente con ID 5.
+2025-05-04 15:19:03,514 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 15:19:03,521 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de actualización finalizada.
+2025-05-04 15:19:03,532 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Cuenta verificada exitosamente.
+2025-05-04 15:19:03,540 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Test de verificación de cuenta ejecutado correctamente.
+2025-05-04 15:19:03,555 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 🧪 Test de verificación de cuenta finalizado.
+2025-05-04 17:00:10,304 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 17:00:10,306 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-04 17:00:10,474 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para el id_usuario 'carjisar@gmail.com'.
+2025-05-04 17:00:10,477 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 17:00:10,479 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-04 17:00:10,480 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
+2025-05-04 17:01:15,379 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 17:01:15,381 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Verificando existencia de usuario...
+2025-05-04 17:01:15,753 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Login exitoso.
+2025-05-04 17:01:15,755 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 17:01:15,757 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Proceso de login finalizado.
+2025-05-04 17:01:15,758 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Test de login ejecutado correctamente.
+2025-05-04 17:01:15,759 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 🧪 Test de login finalizado.
+2025-05-04 17:01:15,762 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 17:01:15,764 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfjqw.WQF6k1xYGVmQ4BN7OJJn_Nf4ttc
+2025-05-04 17:01:21,051 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Correo de verificación enviado correctamente a 'carjisar@gmail.com'.
+2025-05-04 17:01:21,051 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Test de envío de correo ejecutado correctamente.
+2025-05-04 17:01:21,058 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 🧪 Test de envío de correo finalizado.
+2025-05-04 17:01:21,061 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-04 17:01:21,066 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Link generado: http://localhost:5000/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aBfjsQ.o0-Ci0TqHfcbUhRf9n4bqROOnHA
+2025-05-04 17:01:24,682 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Correo de verificación enviado correctamente a 'carjisar@gmail.com'.
+2025-05-04 17:01:24,684 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando verificación de token...
+2025-05-04 17:01:24,704 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Token válido para correo 'carjisar@gmail.com'. Procediendo a activar cuenta...
+2025-05-04 17:01:25,367 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 17:01:25,370 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Iniciando actualización del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-04 17:01:25,637 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-04 17:01:25,721 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [GestionLogin.py] Usuario actualizado correctamente con ID 6.
+2025-05-04 17:01:25,725 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 17:01:25,728 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de actualización finalizada.
+2025-05-04 17:01:25,732 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Cuenta verificada exitosamente.
+2025-05-04 17:01:25,735 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Test de verificación de cuenta ejecutado correctamente.
+2025-05-04 17:01:25,737 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 🧪 Test de verificación de cuenta finalizado.
+2025-05-04 17:02:47,503 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 17:02:47,506 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-04 17:02:47,667 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para el id_usuario 'carjisar@gmail.com'.
+2025-05-04 17:02:47,669 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 17:02:47,670 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-04 17:02:47,672 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
+2025-05-04 17:03:46,551 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 17:03:46,552 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-04 17:03:46,721 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 11 registros de usuarios con detalles.
+2025-05-04 17:03:46,726 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 17:03:46,732 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-04 17:03:46,750 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-04 17:58:13,912 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 17:58:13,913 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando eliminación del usuario por 'u.id_usuario' = '5'...
+2025-05-04 17:58:14,270 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error al eliminar usuario: permission denied for table detalle_usuarios
+
+2025-05-04 17:58:14,272 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 17:58:14,274 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-04 17:58:14,276 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ Error al eliminar usuario: 
+2025-05-04 17:58:14,279 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error general al ejecutar manualmente: 
+2025-05-04 18:05:13,292 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:05:13,293 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-04 18:05:13,545 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-04 18:05:13,630 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario actualizado correctamente con ID 7.
+2025-05-04 18:05:13,634 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:05:13,637 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-05-04 18:05:13,638 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario actualizado correctamente.
+2025-05-04 18:05:14,261 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:05:14,263 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-04 18:05:14,449 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para el id_usuario 'carjisar@gmail.com'.
+2025-05-04 18:05:14,451 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:05:14,452 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-04 18:05:14,453 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
+2025-05-04 18:05:41,429 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:05:41,430 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-04 18:05:41,672 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-04 18:05:41,755 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario actualizado correctamente con ID 8.
+2025-05-04 18:05:41,758 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:05:41,759 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-05-04 18:05:41,760 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario actualizado correctamente.
+2025-05-04 18:05:42,377 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:05:42,379 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-04 18:05:42,545 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para el id_usuario 'carjisar@gmail.com'.
+2025-05-04 18:05:42,547 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:05:42,549 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-04 18:05:42,550 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
+2025-05-04 18:09:40,131 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:09:40,132 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-04 18:09:40,376 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-04 18:09:40,462 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario actualizado correctamente con ID 9.
+2025-05-04 18:09:40,466 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:09:40,468 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-05-04 18:09:40,471 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario actualizado correctamente.
+2025-05-04 18:09:41,058 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:09:41,060 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'u.id_usuario' = '4'...
+2025-05-04 18:09:41,223 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para el id_usuario '4'.
+2025-05-04 18:09:41,224 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:09:41,225 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-04 18:09:41,227 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
+2025-05-04 18:09:57,277 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:09:57,278 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario por 'u.id_usuario' = '4'...
+2025-05-04 18:09:57,533 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-04 18:09:57,620 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario actualizado correctamente con ID 4.
+2025-05-04 18:09:57,622 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:09:57,624 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-05-04 18:09:57,626 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario actualizado correctamente.
+2025-05-04 18:09:58,214 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:09:58,218 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'u.id_usuario' = '4'...
+2025-05-04 18:09:58,384 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para el id_usuario '4'.
+2025-05-04 18:09:58,386 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:09:58,386 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-04 18:09:58,388 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
+2025-05-04 18:18:36,339 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:18:36,339 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-04 18:18:36,524 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 12 registros de usuarios con detalles.
+2025-05-04 18:18:36,528 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:18:36,528 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-04 18:18:36,533 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
