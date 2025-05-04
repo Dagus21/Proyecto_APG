@@ -1,0 +1,7 @@
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [main_test.py] Verificando existencia de usuario...
+[32mINFO    [0m APG_SUCCESS:log.py:193 [SUCCESS] [main_test.py] Login exitoso.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [main_test.py] Proceso de login finalizado.
+[32mINFO    [0m APG_SUCCESS:log.py:193 [SUCCESS] [python.py] Test de login ejecutado correctamente.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [python.py] Test de login finalizado.

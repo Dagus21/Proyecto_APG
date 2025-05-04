@@ -1,13 +1,27 @@
 #-------------------------------------------------------------
-#                    Librerías e Importaciones
+#                   LIBRERÍAS E IMPORTACIONES
 #-------------------------------------------------------------
 """
-Módulo de logging estructurado para el proyecto Proyecto_APG.
+Módulo: Log_Ciproba.py
 
-- logging: Para definir y gestionar múltiples niveles de log.
-- os: Para rutas de archivo dinámicas.
-- inspect: Para identificar automáticamente el archivo llamador.
-- datetime: Para formato de fechas en logs especiales como documentación.
+Sistema de logging estructurado, reutilizable y configurable para proyectos Python.
+
+Incluye múltiples niveles de log:
+- DEBUG, INFO, WARNING, ERROR, CRITICAL
+- SUCCESS (éxito) y DOCUMENTACION (registro técnico)
+
+Características:
+- Guarda los logs en una ruta personalizada o, por defecto, junto al archivo.
+- Registro automático del archivo que ejecuta la acción y su línea.
+- Registro en consola y archivo con el mismo formato.
+- Personalización mediante variables globales al inicio del módulo.
+- Integración profesional con scripts, automatizaciones y orquestaciones externas.
+
+Variables configurables:
+- `RUTA_LOG_PERSONALIZADA`: ruta donde se guardarán los logs (si es None, se usará la ruta local).
+- `NOMBRE_ARCHIVO_LOG`: nombre del archivo .log generado.
+- `LOG_FORMAT`: formato del mensaje en los logs.
+- `FORMATO_FECHA_DOC`: formato humanizado de fecha para registros técnicos.
 
 Autor: Carlos Andrés Jiménez Sarmiento (CJ)
 """
@@ -18,21 +32,14 @@ import inspect
 from datetime import datetime
 
 #-------------------------------------------------------------
-#                   VARIABLES GLOBALES DE LOG
+#              VARIABLES CONFIGURABLES DEL USUARIO
 #-------------------------------------------------------------
-"""
-Configuración base para el sistema de logging estructurado.
 
-- PROYECTO_RAIZ: Nombre raíz del directorio donde se agrupan todas las funcionalidades.
-- LOG_FORMAT: Formato de los mensajes de log (incluye nivel, archivo y línea).
-- FECHA_HORA_FORMATO_DOC: Formato especial para los logs de documentación.
-- NOMBRE_ARCHIVO_LOG: Nombre base que tendrá el archivo de log global del proyecto.
-"""
-
-PROYECTO_RAIZ = 'Proyecto_APG'
-LOG_FORMAT = '%(asctime)s - %(levelname)s - Archivo: %(filename)s - Línea: %(lineno)d - %(message)s'
-FECHA_HORA_FORMATO_DOC = '%d/%m/%Y %I:%M %p'
+RUTA_LOG_PERSONALIZADA = None  # Ejemplo: r"C:\Logs\MiProyecto"
 NOMBRE_ARCHIVO_LOG = 'APG.log'
+
+LOG_FORMAT = '%(asctime)s - %(levelname)s - Archivo: %(filename)s - Línea: %(lineno)d - %(message)s'
+FORMATO_FECHA_DOC = '%d/%m/%Y %I:%M %p'
 
 #-------------------------------------------------------------
 #                    FUNCIONES INTERNAS
@@ -40,45 +47,49 @@ NOMBRE_ARCHIVO_LOG = 'APG.log'
 
 def _archivo_llamador():
     """
-    Devuelve el nombre del archivo (.py) que invocó la función log.
-    Se utiliza para añadir trazabilidad en los mensajes.
+    Obtiene el nombre del archivo (.py) que llamó directamente a la función de log.
+
+    Returns:
+        str: nombre del archivo desde donde se originó la llamada al log.
     """
-    frame = inspect.stack()[3]
-    return os.path.basename(frame.filename)
+    stack = inspect.stack()
+    if len(stack) > 3:
+        return os.path.basename(stack[3].filename)
+    elif len(stack) > 1:
+        return os.path.basename(stack[1].filename)
+    return "desconocido"
 
 def _configurar_logger(nivel_nombre='GENERAL'):
     """
-    Configura un logger único global para todo el proyecto.
-    El archivo de log siempre se guarda en la raíz del proyecto.
+    Crea y configura un logger reutilizable por nivel.
+
+    - Si `RUTA_LOG_PERSONALIZADA` está definida, los logs se guardan allí.
+    - Si no, se guardan en la misma ruta del archivo actual (`Log_Ciproba.py`).
+    - El logger usa consola y archivo con el mismo formato definido en `LOG_FORMAT`.
 
     Args:
-        nivel_nombre (str): Etiqueta de nivel para el logger.
+        nivel_nombre (str): Identificador interno del tipo de log (DEBUG, INFO...).
 
     Returns:
-        logging.Logger: Logger configurado y reutilizable.
+        logging.Logger: instancia configurada lista para uso inmediato.
     """
-    # Obtener la ruta absoluta a la raíz del proyecto
-    ruta_script_actual = os.path.abspath(__file__)
-    partes = ruta_script_actual.split(os.sep)
+    ruta_base = RUTA_LOG_PERSONALIZADA or os.path.dirname(os.path.abspath(__file__))
+    ruta_log = os.path.join(ruta_base, NOMBRE_ARCHIVO_LOG)
 
-    if PROYECTO_RAIZ in partes:
-        idx = partes.index(PROYECTO_RAIZ)
-        ruta_raiz = os.sep.join(partes[:idx + 1])
-    else:
-        ruta_raiz = os.getcwd()  # Fallback por seguridad
+    os.makedirs(os.path.dirname(ruta_log), exist_ok=True)
 
-    ruta_log = os.path.join(ruta_raiz, NOMBRE_ARCHIVO_LOG)
-
-    logger = logging.getLogger(f"{PROYECTO_RAIZ}_{nivel_nombre}")
+    logger = logging.getLogger(f"APG_{nivel_nombre}")
     logger.setLevel(logging.DEBUG)
 
     if not logger.hasHandlers():
         formatter = logging.Formatter(LOG_FORMAT)
 
+        # Handler archivo
         file_handler = logging.FileHandler(ruta_log, encoding='utf-8')
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
 
+        # Handler consola
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(formatter)
         logger.addHandler(console_handler)
@@ -86,10 +97,16 @@ def _configurar_logger(nivel_nombre='GENERAL'):
     return logger
 
 #-------------------------------------------------------------
-#               FUNCIONES DE LOG DE USO PÚBLICO
+#                  FUNCIONES DE LOG PÚBLICAS
 #-------------------------------------------------------------
 
 def log_debug(mensaje: str):
+    """
+    Registra un mensaje de depuración (nivel DEBUG).
+
+    Args:
+        mensaje (str): texto a registrar.
+    """
     logger = _configurar_logger('DEBUG')
     archivo = _archivo_llamador()
     mensaje_log = f"[DEBUG] [{archivo}] {mensaje}"
@@ -97,6 +114,12 @@ def log_debug(mensaje: str):
     print(mensaje_log)
 
 def log_info(mensaje: str):
+    """
+    Registra un mensaje informativo (nivel INFO).
+
+    Args:
+        mensaje (str): texto a registrar.
+    """
     logger = _configurar_logger('INFO')
     archivo = _archivo_llamador()
     mensaje_log = f"[INFO] [{archivo}] {mensaje}"
@@ -104,6 +127,12 @@ def log_info(mensaje: str):
     print(mensaje_log)
 
 def log_warning(mensaje: str):
+    """
+    Registra una advertencia no crítica (nivel WARNING).
+
+    Args:
+        mensaje (str): texto a registrar.
+    """
     logger = _configurar_logger('WARNING')
     archivo = _archivo_llamador()
     mensaje_log = f"[WARNING] [{archivo}] {mensaje}"
@@ -111,6 +140,12 @@ def log_warning(mensaje: str):
     print(mensaje_log)
 
 def log_error(mensaje: str):
+    """
+    Registra un error grave (nivel ERROR).
+
+    Args:
+        mensaje (str): texto a registrar.
+    """
     logger = _configurar_logger('ERROR')
     archivo = _archivo_llamador()
     mensaje_log = f"[ERROR] [{archivo}] {mensaje}"
@@ -118,6 +153,12 @@ def log_error(mensaje: str):
     print(mensaje_log)
 
 def log_critical(mensaje: str):
+    """
+    Registra un error crítico (nivel CRITICAL), potencialmente bloqueante.
+
+    Args:
+        mensaje (str): texto a registrar.
+    """
     logger = _configurar_logger('CRITICAL')
     archivo = _archivo_llamador()
     mensaje_log = f"[CRITICAL] [{archivo}] {mensaje}"
@@ -125,18 +166,29 @@ def log_critical(mensaje: str):
     print(mensaje_log)
 
 def log_documentacion(mensaje: str):
+    """
+    Registra información técnica o explicativa relevante (nivel INFO),
+    con marca de tiempo en formato humanizado.
+
+    Args:
+        mensaje (str): texto a registrar.
+    """
     logger = _configurar_logger('DOCUMENTACION')
     archivo = _archivo_llamador()
-    fecha_hora = datetime.now().strftime(FECHA_HORA_FORMATO_DOC)
+    fecha_hora = datetime.now().strftime(FORMATO_FECHA_DOC)
     mensaje_log = f"[DOC] {fecha_hora} - [{archivo}] {mensaje}"
     logger.info(mensaje_log)
     print(mensaje_log)
 
 def log_success(mensaje: str):
+    """
+    Registra un mensaje de éxito o confirmación personalizada (nivel INFO).
+
+    Args:
+        mensaje (str): texto a registrar.
+    """
     logger = _configurar_logger('SUCCESS')
     archivo = _archivo_llamador()
     mensaje_log = f"[SUCCESS] [{archivo}] {mensaje}"
     logger.info(mensaje_log)
     print(mensaje_log)
-
-

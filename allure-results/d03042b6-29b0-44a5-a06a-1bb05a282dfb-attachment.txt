@@ -1,0 +1,7 @@
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+[32mINFO    [0m APG_SUCCESS:log.py:193 [SUCCESS] [main_test.py] Se recuperaron 7 registros de usuarios con detalles.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+[32mINFO    [0m APG_SUCCESS:log.py:193 [SUCCESS] [python.py] CRUD test ejecutado correctamente.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [python.py] CRUD test finalizado.

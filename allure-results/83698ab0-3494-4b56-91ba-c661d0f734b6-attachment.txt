@@ -1,0 +1,9 @@
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [main_test.py] Iniciando inserción de nuevo usuario y detalle...
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [main_test.py] Usuario creado con ID: 7
+[32mINFO    [0m APG_SUCCESS:log.py:193 [SUCCESS] [main_test.py] Usuario y detalle insertados correctamente.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [main_test.py] Transacción de creación de usuario finalizada.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [python.py] Usuario creado correctamente.
+[32mINFO    [0m APG_SUCCESS:log.py:193 [SUCCESS] [python.py] CRUD test ejecutado correctamente.
+[32mINFO    [0m APG_INFO:log.py:126 [INFO] [python.py] CRUD test finalizado.

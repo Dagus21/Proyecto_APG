@@ -1,0 +1,8 @@
+[INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+[INFO] [main_test.py] Verificando existencia de usuario...
+[SUCCESS] [main_test.py] Login exitoso.
+[INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+[INFO] [main_test.py] Proceso de login finalizado.
+{'status': 200, 'mensaje': 'Acceso concedido.', 'data': {'id_usuario': 4, 'nick_name': 'Carlos_CJ', 'estado_cuenta': False}}
+[SUCCESS] [python.py] Test de login ejecutado correctamente.
+[INFO] [python.py] Test de login finalizado.

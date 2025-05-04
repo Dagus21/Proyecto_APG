@@ -1,0 +1,107 @@
+2025-05-03 19:50:43,897 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-03 19:50:44,073 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se encontraron 2 tablas.
+2025-05-03 19:50:44,075 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 
+📄 Tabla: public.detalle_usuarios
+2025-05-03 19:50:44,171 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - id_detalle_usuarios (integer, NULLABLE: NO)
+2025-05-03 19:50:44,175 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - id_usuario (integer, NULLABLE: NO)
+2025-05-03 19:50:44,178 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - contrasena (text, NULLABLE: NO)
+2025-05-03 19:50:44,182 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - token (text, NULLABLE: YES)
+2025-05-03 19:50:44,184 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - grupo (integer, NULLABLE: NO)
+2025-05-03 19:50:44,190 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - email (character varying, NULLABLE: NO)
+2025-05-03 19:50:44,195 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - estado_cuenta (boolean, NULLABLE: NO)
+2025-05-03 19:50:44,290 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     🔑 PRIMARY KEY: id_detalle_usuarios
+2025-05-03 19:50:44,384 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 
+📄 Tabla: public.usuarios
+2025-05-03 19:50:44,473 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - id_usuario (integer, NULLABLE: NO)
+2025-05-03 19:50:44,475 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - nick_name (character varying, NULLABLE: NO)
+2025-05-03 19:50:44,477 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - fecha (date, NULLABLE: NO)
+2025-05-03 19:50:44,568 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     🔑 PRIMARY KEY: id_usuario
+2025-05-03 19:50:44,660 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Exploración de estructura completada correctamente.
+2025-05-03 19:50:44,668 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Conexión con la base de datos cerrada correctamente.
+2025-05-03 19:50:44,673 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Exploración finalizada.
+2025-05-03 23:28:12,549 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: cannot import name 'Conexiona_Data_Base' from 'Clases_Base.Conexion_Data_Base' (C:\Users\USER\Documents\Unipamplona\Semestre_10\Seguridad  Informatica\Proyecto_APG\Proyecto_APG\Clases_Base\Conexion_Data_Base.py)
+2025-05-03 23:29:59,603 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: cannot import name 'Conexiona_Data_Base' from 'Clases_Base.Conexion_Data_Base' (C:\Users\USER\Documents\Unipamplona\Semestre_10\Seguridad  Informatica\Proyecto_APG\Proyecto_APG\Clases_Base\Conexion_Data_Base.py)
+2025-05-03 23:31:03,234 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: cannot import name 'Conexiona_Data_Base' from 'Clases_Base.Conexion_Data_Base' (C:\Users\USER\Documents\Unipamplona\Semestre_10\Seguridad  Informatica\Proyecto_APG\Proyecto_APG\Clases_Base\Conexion_Data_Base.py)
+2025-05-03 23:32:21,817 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error al ejecutar manualmente: cannot import name 'Crud_Usuario_Detalle' from 'Clases_Base.Crud_Usuario_Detalle' (C:\Users\USER\Documents\Unipamplona\Semestre_10\Seguridad  Informatica\Proyecto_APG\Proyecto_APG\Clases_Base\Crud_Usuario_Detalle.py)
+2025-05-03 23:33:06,193 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-03 23:33:06,196 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ Error en el CRUD test: 'CrudUsuarioDetalle' object has no attribute 'crear_usuario_detalle'
+2025-05-03 23:33:06,197 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Conexión con la base de datos cerrada correctamente.
+2025-05-03 23:33:06,198 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-03 23:34:05,933 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ Error en el CRUD test: 'CrudUsuarioDetalle' object has no attribute 'crear_usuario_detalle'
+2025-05-03 23:34:05,936 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-03 23:34:26,426 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-03 23:34:26,428 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando inserción de nuevo usuario y detalle...
+2025-05-03 23:34:26,430 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error general al crear usuario: CrudUsuarioDetalle.generar_hash_contrasena() takes 1 positional argument but 2 were given
+2025-05-03 23:34:26,431 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-03 23:34:26,433 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de creación de usuario finalizada.
+2025-05-03 23:34:26,434 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Usuario creado correctamente.
+2025-05-03 23:34:26,436 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] CRUD test ejecutado correctamente.
+2025-05-03 23:34:26,438 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-03 23:37:21,027 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-03 23:37:21,028 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-03 23:37:21,196 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 2 registros de usuarios con detalles.
+2025-05-03 23:37:21,199 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-03 23:37:21,201 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-03 23:37:21,204 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] CRUD test ejecutado correctamente.
+2025-05-03 23:37:21,206 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-03 23:39:56,060 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-03 23:39:56,062 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando inserción de nuevo usuario y detalle...
+2025-05-03 23:39:56,063 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error general al crear usuario: CrudUsuarioDetalle.generar_hash_contrasena() takes 1 positional argument but 2 were given
+2025-05-03 23:39:56,065 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-03 23:39:56,066 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de creación de usuario finalizada.
+2025-05-03 23:39:56,068 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Usuario creado correctamente.
+2025-05-03 23:39:56,076 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] CRUD test ejecutado correctamente.
+2025-05-03 23:39:56,080 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-03 23:43:30,577 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-03 23:43:30,578 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando inserción de nuevo usuario y detalle...
+2025-05-03 23:43:30,580 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] Error general al crear usuario: CrudUsuarioDetalle.generar_hash_contrasena() takes 1 positional argument but 2 were given
+2025-05-03 23:43:30,581 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-03 23:43:30,583 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de creación de usuario finalizada.
+2025-05-03 23:43:30,584 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Usuario creado correctamente.
+2025-05-03 23:43:30,585 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] CRUD test ejecutado correctamente.
+2025-05-03 23:43:30,587 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-03 23:47:35,368 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-03 23:47:35,374 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando inserción de nuevo usuario y detalle...
+2025-05-03 23:47:35,769 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Usuario creado con ID: 4
+2025-05-03 23:47:35,949 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario y detalle insertados correctamente.
+2025-05-03 23:47:35,954 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-03 23:47:35,956 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de creación de usuario finalizada.
+2025-05-03 23:47:35,958 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Usuario creado correctamente.
+2025-05-03 23:47:35,961 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] CRUD test ejecutado correctamente.
+2025-05-03 23:47:35,963 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-04 00:02:37,861 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 00:02:37,862 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-04 00:02:38,048 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 3 registros de usuarios con detalles.
+2025-05-04 00:02:38,051 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 00:02:38,054 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-04 00:02:38,057 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] CRUD test ejecutado correctamente.
+2025-05-04 00:02:38,059 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-04 00:03:46,324 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 00:03:46,326 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario con ID 4...
+2025-05-04 00:03:46,578 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para usuario ID 4.
+2025-05-04 00:03:46,583 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 00:03:46,586 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-04 00:03:46,587 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] CRUD test ejecutado correctamente.
+2025-05-04 00:03:46,591 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-04 00:06:13,761 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 00:06:13,764 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario 4...
+2025-05-04 00:06:14,258 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-04 00:06:14,346 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario con ID 4 actualizado correctamente.
+2025-05-04 00:06:14,349 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 00:06:14,350 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-05-04 00:06:14,351 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] CRUD test ejecutado correctamente.
+2025-05-04 00:06:14,353 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-04 00:06:56,331 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 00:06:56,332 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario con ID 4...
+2025-05-04 00:06:56,587 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para usuario ID 4.
+2025-05-04 00:06:56,591 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 00:06:56,596 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-04 00:06:56,601 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] CRUD test ejecutado correctamente.
+2025-05-04 00:06:56,605 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] CRUD test finalizado.
+2025-05-04 02:05:33,921 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 02:05:33,941 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Verificando existencia de usuario...
+2025-05-04 02:05:34,315 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Login exitoso.
+2025-05-04 02:05:34,315 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 02:05:34,321 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Proceso de login finalizado.
+2025-05-04 02:05:34,323 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Test de login ejecutado correctamente.
+2025-05-04 02:05:34,323 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Test de login finalizado.
