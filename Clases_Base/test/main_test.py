@@ -102,9 +102,10 @@ def test_explorar_estructura_bd():
 def test_crud_crear():
     crud = CrudUsuarioDetalle()
     data = {
-        "nick_name": "Carlos_CJ",
+        "nombre": "Carlos Andrés Jiménez Sarmiento",
+        "nick_name": "Carlos_CJ2",
         "contrasena": "1234",
-        "email": "carjisar@gmail.com"
+        "email": "carjisar1@gmail.com"
     }
     try:
         resultado = crud.crear_usuario_con_detalle(data)
@@ -133,7 +134,7 @@ def test_crud_leer_todos():
 def test_crud_leer_por_id():
     crud = CrudUsuarioDetalle()
     try:
-        resultado = crud.leer_por_usuario(5)  # Puede ser int, email o nick
+        resultado = crud.leer_por_usuario(23)  # Puede ser int, email o nick
         print("Resultado leer usuario:", resultado)
         assert resultado["status"] == 200
         log_success("✅ Usuario consultado correctamente.")
@@ -146,7 +147,7 @@ def test_crud_leer_por_id():
 def test_crud_actualizar():
     crud = CrudUsuarioDetalle()
     data = {
-            "estado_cuenta": True,
+            "nombre": "Carlos Andrés Jiménez Sarmiento",
             }
     try:
         resultado = crud.actualizar_usuario_con_detalle("carjisar@gmail.com", data)
@@ -162,7 +163,7 @@ def test_crud_actualizar():
 def test_crud_eliminar():
     crud = CrudUsuarioDetalle()
     try:
-        resultado = crud.eliminar_usuario_con_detalle(5)  # Puede ser int, email o nick
+        resultado = crud.eliminar_usuario_con_detalle(23)  # Puede ser int, email o nick
         print("Resultado eliminar:", resultado)
         assert resultado["status"] == 200
         log_success("✅ Usuario eliminado correctamente.")
@@ -182,6 +183,7 @@ if __name__ == "__main__":
         #print("\n🛠️ Crear usuario")
         #test_crud_crear()
 
+        
         #print("\n✏️ Actualizar usuario")
         #test_crud_actualizar()
         
