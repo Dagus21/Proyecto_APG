@@ -18,6 +18,8 @@ from flask_mail import Mail, Message
 from flask import Flask
 import os
 from dotenv import load_dotenv
+from flask import session
+
 
 # Configuración única para Mail
 load_dotenv()
@@ -75,8 +77,14 @@ class GestionLogin(CrudUsuarioDetalle):
                     "mensaje": "Credenciales incorrectas.",
                     "data": None
                 }
-
+                
+            
             log_success("Login exitoso.")
+            session['id_usuario'] = id_usuario
+            session['nick_name'] = nick_name
+            session['estado_cuenta'] = estado
+            session['autenticado'] = True
+
             return {
                 "status": 200,
                 "mensaje": "Acceso concedido.",
@@ -97,6 +105,39 @@ class GestionLogin(CrudUsuarioDetalle):
         finally:
             self.cerrar_conexion()
             log_info("Proceso de login finalizado.")
+
+    def cerrar_sesion(self):
+        """
+        Elimina todos los datos de sesión del usuario actual.
+        """
+        try:
+            session.clear()
+            log_success("Sesión cerrada correctamente.")
+            return {"status": 200, "mensaje": "Sesión cerrada."}
+        except Exception as e:
+            log_error(f"Error al cerrar sesión: {str(e)}")
+            return {"status": 500, "mensaje": "Error al cerrar sesión."}
+
+    def verificar_sesion_activa(self):
+        """
+        Verifica si existe una sesión de usuario activa.
+        """
+        if session.get("autenticado"):
+            return {
+                "status": 200,
+                "mensaje": "Sesión activa.",
+                "data": {
+                    "id_usuario": session.get("id_usuario"),
+                    "nick_name": session.get("nick_name"),
+                    "estado_cuenta": session.get("estado_cuenta")
+                }
+            }
+        else:
+            return {
+                "status": 401,
+                "mensaje": "No hay sesión activa.",
+                "data": None
+            }
 
     def enviar_correo_verificacion(self, correo: str, nick_name: str) -> dict:
         """

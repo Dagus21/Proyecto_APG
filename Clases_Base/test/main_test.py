@@ -133,7 +133,7 @@ def test_crud_leer_todos():
 def test_crud_leer_por_id():
     crud = CrudUsuarioDetalle()
     try:
-        resultado = crud.leer_por_usuario(4)  # Puede ser int, email o nick
+        resultado = crud.leer_por_usuario(5)  # Puede ser int, email o nick
         print("Resultado leer usuario:", resultado)
         assert resultado["status"] == 200
         log_success("✅ Usuario consultado correctamente.")
@@ -185,14 +185,14 @@ if __name__ == "__main__":
         #print("\n✏️ Actualizar usuario")
         #test_crud_actualizar()
         
-        #print("\n🔍 Leer usuario por ID")
-        #test_crud_leer_por_id()
+        print("\n🔍 Leer usuario por ID")
+        test_crud_leer_por_id()
         
         #print("\n🗑️ Eliminar usuario")
         #test_crud_eliminar()
         
-        print("\n📋 Leer todos los usuarios")
-        test_crud_leer_todos()
+        #print("\n📋 Leer todos los usuarios")
+        #test_crud_leer_todos()
         
     except Exception as e:
         log_error(f"❌ Error general al ejecutar manualmente: {e}")
