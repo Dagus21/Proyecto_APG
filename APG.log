@@ -290,3 +290,81 @@ with app.app_context(). See the documentation for more information.
 2025-05-04 18:18:36,528 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
 2025-05-04 18:18:36,528 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
 2025-05-04 18:18:36,533 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-04 18:43:40,724 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:43:40,726 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-04 18:43:40,897 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 12 registros de usuarios con detalles.
+2025-05-04 18:43:40,900 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:43:40,903 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-04 18:43:40,905 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-04 18:44:32,722 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:44:32,723 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando eliminación del usuario por 'u.id_usuario' = '9'...
+2025-05-04 18:44:32,969 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Detalle del usuario eliminado.
+2025-05-04 18:44:33,135 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario con ID 9 eliminado correctamente.
+2025-05-04 18:44:33,138 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:44:33,141 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-04 18:44:33,147 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario eliminado correctamente.
+2025-05-04 18:44:33,815 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:44:33,825 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-04 18:44:34,003 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 11 registros de usuarios con detalles.
+2025-05-04 18:44:34,005 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:44:34,005 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-04 18:44:34,005 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-04 18:45:32,806 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:45:32,808 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando eliminación del usuario por 'u.id_usuario' = '8'...
+2025-05-04 18:45:33,057 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Detalle del usuario eliminado.
+2025-05-04 18:45:33,223 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario con ID 8 eliminado correctamente.
+2025-05-04 18:45:33,225 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:45:33,228 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-04 18:45:33,229 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario eliminado correctamente.
+2025-05-04 18:45:33,894 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:45:33,897 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-04 18:45:34,078 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 13 registros de usuarios con detalles.
+2025-05-04 18:45:34,081 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:45:34,083 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-04 18:45:34,085 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-04 18:45:41,907 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:45:41,909 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando eliminación del usuario por 'u.id_usuario' = '7'...
+2025-05-04 18:45:42,166 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Detalle del usuario eliminado.
+2025-05-04 18:45:42,340 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario con ID 7 eliminado correctamente.
+2025-05-04 18:45:42,344 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:45:42,348 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-04 18:45:42,350 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario eliminado correctamente.
+2025-05-04 18:45:42,949 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:45:42,951 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-04 18:45:43,117 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 12 registros de usuarios con detalles.
+2025-05-04 18:45:43,123 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:45:43,125 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-04 18:45:43,127 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-04 18:45:53,040 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:45:53,041 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando eliminación del usuario por 'u.id_usuario' = '6'...
+2025-05-04 18:45:53,310 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Detalle del usuario eliminado.
+2025-05-04 18:45:53,490 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario con ID 6 eliminado correctamente.
+2025-05-04 18:45:53,493 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:45:53,494 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-04 18:45:53,498 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario eliminado correctamente.
+2025-05-04 18:45:54,159 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:45:54,163 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-04 18:45:54,340 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 11 registros de usuarios con detalles.
+2025-05-04 18:45:54,344 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:45:54,345 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-04 18:45:54,346 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-04 18:46:16,158 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:46:16,160 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando eliminación del usuario por 'u.id_usuario' = '5'...
+2025-05-04 18:46:16,429 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Detalle del usuario eliminado.
+2025-05-04 18:46:16,606 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario con ID 5 eliminado correctamente.
+2025-05-04 18:46:16,607 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:46:16,612 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-04 18:46:16,614 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario eliminado correctamente.
+2025-05-04 18:46:17,210 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:46:17,211 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-04 18:46:17,376 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 10 registros de usuarios con detalles.
+2025-05-04 18:46:17,377 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:46:17,378 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-04 18:46:17,381 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-04 18:47:28,065 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-04 18:47:28,068 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'u.id_usuario' = '5'...
+2025-05-04 18:47:28,233 - WARNING - Archivo: log.py - Línea: 139 - [WARNING] [main_test.py] No se encontró usuario con el id_usuario '5'.
+2025-05-04 18:47:28,238 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-04 18:47:28,240 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-04 18:47:28,244 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ Error al consultar usuario: 
+2025-05-04 18:47:28,245 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error general al ejecutar manualmente: 
