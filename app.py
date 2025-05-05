@@ -29,32 +29,28 @@ def render_with_base_templates(content_template=None, content_html=None, **conte
     current_path = context.get('current_path', '/')
     
     # Obtener el contenido del navbar
-    with open('templates_base/navbar.html', 'r', encoding='utf-8') as navbar_file:
-        navbar = navbar_file.read()
+    # with open('templates_base/navbar.html', 'r', encoding='utf-8') as navbar_file:
+    #     navbar = navbar_file.read()
     
     # Marcar la opción actual en el navbar
-    if current_path == '/':
-        navbar = navbar.replace('href="/"', 'href="/" class="current"')
-    elif current_path == '/f1':
-        navbar = navbar.replace('href="/f1"', 'href="/f1" class="current"')
-    elif current_path == '/f2':
-        navbar = navbar.replace('href="/f2"', 'href="/f2" class="current"')
-    elif current_path == '/login':
-        navbar = navbar.replace('href="/login"', 'href="/login" class="current"')
+    # if current_path == '/':
+    #     navbar = navbar.replace('href="/"', 'href="/" class="current"')
+    # elif current_path == '/f1':
+    #     navbar = navbar.replace('href="/f1"', 'href="/f1" class="current"')
+    # elif current_path == '/f2':
+    #     navbar = navbar.replace('href="/f2"', 'href="/f2" class="current"')
+    # elif current_path == '/login':
+    #     navbar = navbar.replace('href="/login"', 'href="/login" class="current"')
     
     # Reemplazar la referencia al navbar en el header
-    header = header.replace('{% include \'templates_base/navbar.html\' %}', navbar)
+    # header = header.replace('{% include \'templates_base/navbar.html\' %}', navbar)
     
     # Combinar todas las partes
     return header + content + footer
 
 @app.route('/')
 def home():
-    content = """
-    <h1>Bienvenido al Proyecto APG</h1>
-    <p>Esta es la página de inicio del proyecto. Utiliza los enlaces en la navegación para acceder a las diferentes funcionalidades.</p>
-    """
-    return render_with_base_templates(current_path='/', content_html=content)
+    return render_with_base_templates(content_template='funcionalidad_login/statics/templates/funcionalidad_login_template.html', current_path='/')
 
 @app.route('/f1')
 def funcionalidad_1():
@@ -74,9 +70,6 @@ def login():
         return redirect(url_for('home'))
     return render_with_base_templates(content_template='templates_base/content.html', current_path='/login')
 
-"""
-comentarios de prueba para github en rama dev_Gustavo
-"""
 
 if __name__ == '__main__':
     app.run(debug=True)
