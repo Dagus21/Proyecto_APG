@@ -11,7 +11,9 @@
     </li>
     {% endif %}
 
-    <li><a href="#" onclick="cerrarSesion()">Cerrar sesión</a></li>
+    <li><a href="{{ url_for('login.cerrar_sesion') }}">Cerrar sesión</a></li>
+
+
   </ul>
 </nav>
 {% endif %}

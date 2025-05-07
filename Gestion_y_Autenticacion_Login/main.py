@@ -35,18 +35,10 @@ def login_usuario():
     session['mensaje_error'] = resultado['mensaje']
     return redirect('/login/')
 
-
 @login_bp.route('/cerrar', methods=['GET'])
 def cerrar_sesion():
-    """Cierra la sesión del usuario"""
-    resultado = login_manager.cerrar_sesion()
-
-    if resultado["status"] == 200:
-        return redirect(url_for('login.vista_login'))
-    else:
-        return jsonify(resultado), 500  # Para mostrar errores si algo falla
-
-
+    login_manager.cerrar_sesion()
+    return redirect(url_for('login.vista_login'))
 
 @login_bp.route('/bienvenida', methods=['GET'])
 def bienvenida_usuario():
@@ -116,6 +108,9 @@ def cambiar_contrasena():
     mensaje = request.args.get("mensaje") or ""
     id_usuario = session.get("id_usuario")
 
+    if not id_usuario:
+        return redirect('/login')
+
     if request.method == "POST":
         actual = request.form["actual"]
         nueva = request.form["nueva"]
@@ -138,8 +133,9 @@ def cambiar_contrasena():
                     mensaje = f"❌ {resultado['mensaje']}"
 
     usuario = {
-        "id_usuario": session.get("id_usuario"),
+        "id_usuario": id_usuario,
         "nick_name": session.get("nick_name"),
         "estado_cuenta": session.get("estado_cuenta")
     }
+
     return render_template("cambiar_contrasena.html", mensaje=mensaje, usuario=usuario)
