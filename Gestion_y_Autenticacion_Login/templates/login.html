@@ -1,0 +1,45 @@
+{% extends "base_aux.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('login.static', filename='css/login.css') }}">
+{% endblock %}
+
+{% block title %}Login - Proyecto APG{% endblock %}
+
+{% block content %}
+<main>
+    <div class="main active">
+        <h2>Iniciar sesión</h2>
+
+        {% if mensaje %}
+        <div class="mensaje-info">
+            {{ mensaje }}
+        </div>
+        {% endif %}
+
+
+        {% if session.get('mensaje_error') %}
+        <div class="mensaje-error">
+            {{ session.pop('mensaje_error') }}
+        </div>
+        {% endif %}
+
+        <form id="form-login" method="POST" action="/login/iniciar">
+            <div class="input-group">
+                <input type="text" name="usuario" placeholder="Correo o nick" required>
+            </div>
+            <div class="input-group">
+                <input id="input-contrasena" type="password" name="contrasena" placeholder="Contraseña" required>
+                <button type="button" class="toggle-password" onclick="togglePassword(this)">👁️</button>
+            </div>
+            <button type="submit" class="btn-principal">Iniciar sesión</button>
+            <a href="/recuperar" class="link">¿Olvidaste tu contraseña?</a>
+            <a href="/login/registro" class="btn-secundario">Registrarse</a>
+        </form>
+    </div>
+</main>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('login.static', filename='js/login.js') }}"></script>
+{% endblock %}

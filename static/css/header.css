@@ -1,0 +1,39 @@
+/* -------------------------------------------------------------
+   Header - Solo para páginas públicas (login, registro, inicio)
+   ------------------------------------------------------------- */
+   .header-apg {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 1.3rem;
+  }
+  
+  .header-apg h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .header-btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  
+  .btn-header {
+    background-color: #573b8a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-header:hover {
+    background-color: #6d44b8;
+  }
+  

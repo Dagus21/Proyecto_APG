@@ -1,0 +1,19 @@
+{% extends "base_user.html" %}
+
+{% block title %}Bienvenido{% endblock %}
+
+{% block content %}
+<main>
+  <div class="main active">
+    <h2>¡Hola, {{ usuario.nick_name }}! 👋</h2>
+
+    {% if not usuario.estado_cuenta %}
+      <div class="alerta-verificacion">
+        Tu cuenta aún no está verificada. Por favor botón verificar cuenta del menú para enviar el enlace de verificación. o si no tu cuenta sera elimiada en 72 horas.
+      </div>
+    {% else %}
+      <p>Tu cuenta ha sido verificada con éxito. Puedes explorar todas las funciones disponibles.</p>
+    {% endif %}
+  </div>
+</main>
+{% endblock %}

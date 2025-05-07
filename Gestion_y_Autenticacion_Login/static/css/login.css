@@ -1,0 +1,87 @@
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form .input-group {
+    position: relative;
+    width: 85%;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e0dede;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* Botón principal */
+  .btn-principal {
+    background: #573b8a;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  /* Enlace: ¿Olvidaste...? y Registrarse */
+  .link,
+  .btn-secundario {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #573b8a;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .link {
+    display: inline-block;
+  }
+  
+  .mensaje-error {
+    background-color: #ffdddd;
+    color: #a94442;
+    padding: 12px 20px;
+    border-left: 5px solid #d9534f;
+    margin-bottom: 15px;
+    width: 85%;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .mensaje-info {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px 20px;
+    margin: 15px 0;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+  

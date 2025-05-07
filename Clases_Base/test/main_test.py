@@ -134,7 +134,7 @@ def test_crud_leer_todos():
 def test_crud_leer_por_id():
     crud = CrudUsuarioDetalle()
     try:
-        resultado = crud.leer_por_usuario(23)  # Puede ser int, email o nick
+        resultado = crud.leer_por_usuario("carlos1006744921@gmail.com")  # Puede ser int, email o nick
         print("Resultado leer usuario:", resultado)
         assert resultado["status"] == 200
         log_success("✅ Usuario consultado correctamente.")
@@ -147,10 +147,11 @@ def test_crud_leer_por_id():
 def test_crud_actualizar():
     crud = CrudUsuarioDetalle()
     data = {
-            "nombre": "Carlos Andrés Jiménez Sarmiento",
+            "contrasena": "1234",
+            "estado_cuenta": False,
             }
     try:
-        resultado = crud.actualizar_usuario_con_detalle("carjisar@gmail.com", data)
+        resultado = crud.actualizar_usuario_con_detalle("carlos1006744921@gmail.com", data)
         print("Resultado actualizar:", resultado)
         assert resultado["status"] == 200
         log_success("✅ Usuario actualizado correctamente.")
@@ -184,8 +185,8 @@ if __name__ == "__main__":
         #test_crud_crear()
 
         
-        #print("\n✏️ Actualizar usuario")
-        #test_crud_actualizar()
+        print("\n✏️ Actualizar usuario")
+        test_crud_actualizar()
         
         print("\n🔍 Leer usuario por ID")
         test_crud_leer_por_id()

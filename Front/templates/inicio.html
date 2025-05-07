@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - Proyecto APG</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/inicio.css') }}">
+</head>
+<body>
+
+  {% include 'header.html' %}
+
+  <main>
+    <div class="main active">
+      <div class="presentacion">
+        <h2>Bienvenido al Proyecto APG</h2>
+        <p>
+          Este proyecto fue desarrollado como parte de la asignatura de Seguridad Informática,
+          con el objetivo de construir una plataforma segura, funcional y moderna centrada en el
+          proceso de autenticación y protección de datos mediante tecnologías como hash de contraseñas.
+        </p>
+        <p>
+          Nuestra meta es dejar una huella en esta materia con una solución memorable, aplicable a escenarios reales
+          y digna de compartir en nuestros repositorios profesionales.
+        </p>
+        <p>
+          Ingresa o regístrate para explorar la experiencia que hemos preparado con dedicación y altos estándares de ciberseguridad.
+        </p>
+        <div class="firma">
+          – Carlos Andrés Jiménez Sarmiento, Moisés David Gonzales Bermúdez, David Gustavo Medina Ardila
+        </div>
+      </div>
+    </div>
+  </main>
+
+  {% include 'footer.html' %}
+
+</body>
+</html>

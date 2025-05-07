@@ -1,0 +1,39 @@
+.presentacion {
+    max-width: 800px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .presentacion h2 {
+    color: #302b63;
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+  
+  .presentacion p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .firma {
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #573b8a;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .presentacion h2 {
+      font-size: 1.5rem;
+    }
+  
+    .presentacion p {
+      font-size: 1rem;
+    }
+  }
+  

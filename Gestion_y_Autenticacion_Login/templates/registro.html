@@ -1,0 +1,41 @@
+{% extends "base_aux.html" %}
+
+{% block title %}Registro - Proyecto APG{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('login.static', filename='css/registro.css') }}">
+{% endblock %}
+
+{% block content %}
+<main>
+  <div class="main active">
+    <h2>Registro</h2>
+    <form id="form-registro">
+      <input type="text" name="nombre" placeholder="Nombre *" required>
+      <input type="text" name="segundo_nombre" placeholder="Segundo nombre">
+      <input type="text" name="apellido" placeholder="Apellido *" required>
+      <input type="text" name="segundo_apellido" placeholder="Segundo apellido">
+      <input type="text" name="nick_name" placeholder="Nick name" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+
+      <div class="input-group">
+        <input id="contrasena" type="password" name="contrasena" placeholder="Contraseña" required>
+        <button type="button" class="toggle-password" onclick="togglePassword(this, 'contrasena')">👁️</button>
+      </div>
+
+      <div class="input-group">
+        <input id="confirmar" type="password" name="confirmar" placeholder="Confirmar contraseña" required>
+        <button type="button" class="toggle-password" onclick="togglePassword(this, 'confirmar')">👁️</button>
+      </div>
+
+      <button type="submit">Registrarse</button>
+      <a href="/login/" class="link">¿Ya tienes cuenta? Inicia sesión</a>
+    </form>
+    <p id="msg-error" class="error-text hidden"></p>
+  </div>
+</main>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('login.static', filename='js/registro.js') }}"></script>
+{% endblock %}
