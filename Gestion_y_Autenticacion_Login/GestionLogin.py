@@ -53,7 +53,7 @@ class GestionLogin(CrudUsuarioDetalle):
             log_info("Verificando existencia de usuario...")
 
             self.cursor.execute("""
-                SELECT u.id_usuario, u.nick_name, d.contrasena, d.estado_cuenta
+                SELECT u.id_usuario, u.nick_name, d.contrasena, d.estado_cuenta, d.email
                 FROM usuarios u
                 JOIN detalle_usuarios d ON u.id_usuario = d.id_usuario
                 WHERE u.nick_name = %s OR d.email = %s;
@@ -68,7 +68,8 @@ class GestionLogin(CrudUsuarioDetalle):
                     "data": None
                 }
 
-            id_usuario, nick_name, contrasena_hash, estado = usuario
+            id_usuario, nick_name, contrasena_hash, estado, email = usuario
+
 
             if not bcrypt.checkpw(contrasena_input.encode(), contrasena_hash.encode()):
                 log_error("Contraseña incorrecta.")
@@ -84,6 +85,7 @@ class GestionLogin(CrudUsuarioDetalle):
             session['nick_name'] = nick_name
             session['estado_cuenta'] = estado
             session['autenticado'] = True
+            session['email'] = email
 
             return {
                 "status": 200,
@@ -159,7 +161,7 @@ class GestionLogin(CrudUsuarioDetalle):
 
             # Construcción del link de verificación
             dominio = os.getenv("FRONTEND_URL", "http://localhost:5000")
-            link = f"{dominio}/verificar/{token}"
+            link = f"{dominio}/login/verificar/{token}"
             log_info(f"Link generado: {link}")
 
             # Contenido HTML del correo

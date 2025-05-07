@@ -1,0 +1,34 @@
+/* -------------------------------------------------------------
+   Footer - Aparece en todas las vistas (públicas y privadas)
+   ------------------------------------------------------------- */
+   .footer-apg {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 15px 10px;
+    width: 100%;
+  }
+  
+  .footer-apg ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .footer-apg li {
+    font-size: 0.9rem;
+    margin: 2px 0;
+  }
+  
+  /* Responsive tip: Se adapta sin problemas a dispositivos móviles */
+  @media (max-width: 600px) {
+    .footer-apg {
+      font-size: 0.85rem;
+    }
+  
+    .footer-apg li {
+      font-size: 0.8rem;
+    }
+  }
+  

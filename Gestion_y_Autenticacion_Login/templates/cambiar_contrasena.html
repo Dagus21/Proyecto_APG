@@ -1,0 +1,42 @@
+{% extends "base_user.html" %}
+
+{% block title %}Cambiar Contraseña{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('login.static', filename='css/cambiar_contrasena.css') }}">
+{% endblock %}
+
+{% block content %}
+<main>
+  <div class="main active">
+    <h2>Cambiar Contraseña</h2>
+    <form id="form-cambiar" method="POST" action="/login/cambiar-contrasena">
+      <div class="input-group">
+        <input id="actual" type="password" name="actual" placeholder="Contraseña Actual" required>
+        <button type="button" class="toggle-password" onclick="togglePassword(this, 'actual')">👁️</button>
+      </div>
+
+      <div class="input-group">
+        <input id="nueva" type="password" name="nueva" placeholder="Nueva Contraseña" required>
+        <button type="button" class="toggle-password" onclick="togglePassword(this, 'nueva')">👁️</button>
+      </div>
+
+      <div class="input-group">
+        <input id="confirmar" type="password" name="confirmar" placeholder="Confirmar Nueva Contraseña" required>
+        <button type="button" class="toggle-password" onclick="togglePassword(this, 'confirmar')">👁️</button>
+      </div>
+
+      <button type="submit" class="btn-principal">Actualizar Contraseña</button>
+    </form>
+
+    <p id="msg-error" class="error-text {% if not mensaje %}hidden{% endif %}">
+        {{ mensaje }}
+      </p>
+      
+  </div>
+</main>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('login.static', filename='js/cambiar_contrasena.js') }}"></script>
+{% endblock %}

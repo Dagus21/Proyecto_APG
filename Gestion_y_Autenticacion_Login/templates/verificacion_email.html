@@ -1,0 +1,17 @@
+{% extends "base_aux.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('login.static', filename='css/verificacion_email.css') }}">
+{% endblock %}
+
+{% block title %}Cuenta Verificada{% endblock %}
+
+{% block content %}
+<main>
+  <div class="contenedor-verificacion">
+    <h2>✅ Cuenta Verificada Exitosamente</h2>
+    <p>Tu cuenta ha sido verificada correctamente. Ya puedes iniciar sesión y disfrutar de todas las funcionalidades.</p>
+    <a href="/login" class="btn-principal">Iniciar Sesión</a>
+  </div>
+</main>
+{% endblock %}

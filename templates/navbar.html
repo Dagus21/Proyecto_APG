@@ -1,0 +1,17 @@
+<!-- templates_base/navbar.html -->
+{% if usuario is defined %}
+<nav class="navbar-apg">
+  <ul class="navbar-list">
+    <li><a href="/login/bienvenida">Inicio</a></li>
+    <li><a href="/login/cambiar-contrasena">Cambiar contraseña</a></li>
+
+    {% if not usuario.estado_cuenta %}
+    <li>
+      <a href="#" id="btn-verificar-cuenta" class="alerta-verificacion">Verificar cuenta</a>
+    </li>
+    {% endif %}
+
+    <li><a href="#" onclick="cerrarSesion()">Cerrar sesión</a></li>
+  </ul>
+</nav>
+{% endif %}
