@@ -12,6 +12,7 @@
     <script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
   </head>
   <body>
+
     <div id="home" class="main active">
       <h2>Bienvenido</h2>
       <button onclick="mostrar('registro')">Registrarse</button>
@@ -24,8 +25,6 @@
       <input id="usuarioRegistro" type="text" placeholder="Usuario" />
       <input id="nombreRegistro" type="text" placeholder="Nombre" />
       <input id="apellidoRegistro" type="text" placeholder="Apellido" />
-
-
       <div class="input-group">
         <input type="password" id="registroPass" placeholder="Contraseña" />
         <button
@@ -37,18 +36,15 @@
         >
           <img src="{{ url_for('static', filename='image/eye.svg') }}" alt="Mostrar contraseña" class="icono-ojo" />
         </button>
-
       </div>
-      
-      
-
       <button onclick="validarRegistro()">Registrarse</button>
     </div>
+
+
 
     <div id="login" class="main">
       <h2>Iniciar Sesión</h2>
       <input id="usuarioLogin" type="text" placeholder="Usuario" />
-
       <div class="input-group">
         <input type="password" id="loginPass" placeholder="Contraseña" />
         <button
@@ -61,29 +57,34 @@
           <img src="{{ url_for('static', filename='image/eye.svg') }}" alt="Mostrar contraseña" class="icono-ojo" />
         </button>
       </div>
-      
-      
-
       <button onclick="validarLogin()">Iniciar sesión</button>
       <div class="link" onclick="mostrar('recuperar')">
         ¿Olvidaste tu contraseña?
       </div>
     </div>
 
+
+
     <div id="exito" class="main">
       <h2>Tu registro ha sido exitoso</h2>
       <button onclick="mostrar('home')">Volver al inicio</button>
     </div>
+
+
 
     <div id="bienvenida" class="main">
       <h2>Bienvenida de inicio de sesión</h2>
       <button onclick="mostrar('home')">Logout</button>
     </div>
 
+
+
     <div id="recuperar" class="main">
       <h2>Para restablecer tu contraseña</h2>
       <input type="email" placeholder="Tu correo" />
       <button onclick="mostrar('home')">Enviar</button>
     </div>
+
+    
   </body>
 </html>
