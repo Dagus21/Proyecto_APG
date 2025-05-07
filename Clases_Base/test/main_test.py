@@ -134,7 +134,7 @@ def test_crud_leer_todos():
 def test_crud_leer_por_id():
     crud = CrudUsuarioDetalle()
     try:
-        resultado = crud.leer_por_usuario(4)  # Puede ser int, email o nick
+        resultado = crud.leer_por_usuario("carlos1006744921@gmail.com")  # Puede ser int, email o nick
         print("Resultado leer usuario:", resultado)
         assert resultado["status"] == 200
         log_success("✅ Usuario consultado correctamente.")

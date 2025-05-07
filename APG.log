@@ -1026,3 +1026,72 @@ with app.app_context(). See the documentation for more information.
 2025-05-07 03:23:39,592 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
 2025-05-07 03:23:39,597 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
 2025-05-07 03:25:49,054 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Sesión cerrada correctamente.
+2025-05-07 03:27:45,781 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:27:45,787 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-07 03:27:46,582 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-05-07 03:27:46,588 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:27:46,594 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-07 03:28:18,132 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:28:18,138 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando búsqueda del usuario por 'u.id_usuario' = '42'...
+2025-05-07 03:28:18,328 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Consulta completada para el id_usuario '42'.
+2025-05-07 03:28:18,334 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:28:18,341 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Finalización de consulta de usuario.
+2025-05-07 03:28:19,459 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:28:19,464 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando actualización del usuario por 'u.id_usuario' = '42'...
+2025-05-07 03:28:20,140 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-07 03:28:20,234 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Usuario actualizado correctamente con ID 42.
+2025-05-07 03:28:20,242 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:28:20,255 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de actualización finalizada.
+2025-05-07 03:28:20,287 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:28:20,338 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de eliminación finalizada.
+2025-05-07 03:29:35,554 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:29:35,555 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario por 'd.email' = 'carlos1006744921@gmail.com'...
+2025-05-07 03:29:36,021 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-07 03:29:36,107 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario actualizado correctamente con ID 42.
+2025-05-07 03:29:36,109 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:29:36,110 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-05-07 03:29:36,111 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:29:36,112 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-07 03:29:36,113 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario actualizado correctamente.
+2025-05-07 03:29:36,735 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:29:36,736 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'u.id_usuario' = '4'...
+2025-05-07 03:29:36,922 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para el id_usuario '4'.
+2025-05-07 03:29:36,927 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:29:36,930 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-07 03:29:36,933 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
+2025-05-07 03:29:37,574 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:29:37,577 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-07 03:29:37,750 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 24 registros de usuarios con detalles.
+2025-05-07 03:29:37,752 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:29:37,754 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-07 03:29:37,764 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-07 03:30:54,651 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:30:54,653 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario por 'd.email' = 'carlos1006744921@gmail.com'...
+2025-05-07 03:30:55,122 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-07 03:30:55,213 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario actualizado correctamente con ID 42.
+2025-05-07 03:30:55,218 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:30:55,221 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-05-07 03:30:55,225 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:30:55,228 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-07 03:30:55,232 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario actualizado correctamente.
+2025-05-07 03:30:55,904 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:30:55,907 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'u.id_usuario' = '4'...
+2025-05-07 03:30:56,082 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para el id_usuario '4'.
+2025-05-07 03:30:56,084 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:30:56,086 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-07 03:30:56,087 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
+2025-05-07 03:31:57,731 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:31:57,733 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario por 'd.email' = 'carlos1006744921@gmail.com'...
+2025-05-07 03:31:58,220 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-07 03:31:58,313 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario actualizado correctamente con ID 42.
+2025-05-07 03:31:58,317 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:31:58,319 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-05-07 03:31:58,322 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:31:58,325 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-07 03:31:58,328 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario actualizado correctamente.
+2025-05-07 03:31:58,965 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 03:31:58,966 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando búsqueda del usuario por 'd.email' = 'carlos1006744921@gmail.com'...
+2025-05-07 03:31:59,145 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Consulta completada para el id_usuario 'carlos1006744921@gmail.com'.
+2025-05-07 03:31:59,148 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 03:31:59,149 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
+2025-05-07 03:31:59,150 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
