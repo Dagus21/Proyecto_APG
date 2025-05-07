@@ -1,0 +1,21 @@
+[INFO] [main_test.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+[SUCCESS] [python.py] Se encontraron 2 tablas.
+[INFO] [python.py] 
+📄 Tabla: public.detalle_usuarios
+[INFO] [python.py]     - id_detalle_usuarios (integer, NULLABLE: NO)
+[INFO] [python.py]     - id_usuario (integer, NULLABLE: NO)
+[INFO] [python.py]     - contrasena (text, NULLABLE: NO)
+[INFO] [python.py]     - token (text, NULLABLE: YES)
+[INFO] [python.py]     - grupo (integer, NULLABLE: NO)
+[INFO] [python.py]     - email (character varying, NULLABLE: NO)
+[INFO] [python.py]     - estado_cuenta (boolean, NULLABLE: NO)
+[INFO] [python.py]     🔑 PRIMARY KEY: id_detalle_usuarios
+[INFO] [python.py] 
+📄 Tabla: public.usuarios
+[INFO] [python.py]     - id_usuario (integer, NULLABLE: NO)
+[INFO] [python.py]     - nick_name (character varying, NULLABLE: NO)
+[INFO] [python.py]     - fecha (date, NULLABLE: NO)
+[INFO] [python.py]     🔑 PRIMARY KEY: id_usuario
+[SUCCESS] [python.py] Exploración de estructura completada correctamente.
+[INFO] [main_test.py] Conexión con la base de datos cerrada correctamente.
+[INFO] [python.py] Exploración finalizada.
