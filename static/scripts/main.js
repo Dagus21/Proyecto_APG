@@ -25,9 +25,28 @@ function validarRegistro() {
     return;
   }
 
-  // Aquí podrías guardar los datos o mostrar el mensaje de éxito
-  mostrar('exito');
+  // Enviar datos al backend Flask
+  fetch('/registro', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ correo, usuario, nombre, apellido, contrasena })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.status === 'success') {
+      mostrar('exito');
+    } else {
+      alert('Error al registrar');
+    }
+  })
+  .catch(error => {
+    console.error('Error en el registro:', error);
+    alert('Ocurrió un error al registrar');
+  });
 }
+
 
 function validarLogin() {
   const inputs = document.querySelectorAll('#login input');

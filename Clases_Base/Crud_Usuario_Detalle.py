@@ -37,6 +37,7 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
 
         Args:
             data (dict): Diccionario con las claves:
+                - nombre (str)
                 - nick_name (str)
                 - contrasena (str)
                 - email (str)
@@ -61,10 +62,10 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
 
             # Insertar en tabla usuarios
             self.cursor.execute("""
-                INSERT INTO usuarios (nick_name, fecha)
-                VALUES (%s, %s)
+                INSERT INTO usuarios (nombre, nick_name, fecha)
+                VALUES (%s, %s, %s)
                 RETURNING id_usuario;
-            """, (data['nick_name'], fecha_actual))
+            """, (data['nombre'], data['nick_name'], fecha_actual))
 
             id_usuario = self.cursor.fetchone()[0]
             log_info(f"Usuario creado con ID: {id_usuario}")
@@ -126,7 +127,7 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
             log_info("Iniciando lectura de usuarios y sus detalles...")
 
             self.cursor.execute("""
-                SELECT u.id_usuario, u.nick_name, u.fecha,
+                SELECT u.id_usuario, u.nombre, u.nick_name, u.fecha,
                     d.id_detalle_usuarios, d.contrasena, d.token,
                     d.grupo, d.email, d.estado_cuenta
                 FROM usuarios u
@@ -184,7 +185,7 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
 
             # Consulta unificada
             self.cursor.execute(f"""
-                SELECT u.id_usuario, u.nick_name, u.fecha,
+                SELECT u.id_usuario, u.nombre, u.nick_name, u.fecha,
                     d.contrasena, d.token, d.grupo, d.email, d.estado_cuenta
                 FROM usuarios u
                 JOIN detalle_usuarios d ON u.id_usuario = d.id_usuario
@@ -203,13 +204,14 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
 
             resultado = {
                 "id_usuario": fila[0],
-                "nick_name": fila[1],
-                "fecha": str(fila[2]),
-                "contrasena": fila[3],
-                "token": fila[4],
-                "grupo": fila[5],
-                "email": fila[6],
-                "estado_cuenta": fila[7]
+                "nombre": fila[1],
+                "nick_name": fila[2],
+                "fecha": str(fila[3]),
+                "contrasena": fila[4],
+                "token": fila[5],
+                "grupo": fila[6],
+                "email": fila[7],
+                "estado_cuenta": fila[8]
             }
 
             log_success(f"Consulta completada para el id_usuario '{id_usuario}'.")
@@ -238,6 +240,7 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
         Args:
             id_usuario (Union[int, str]): puede ser ID, nick_name o email.
             data (dict): Campos a actualizar opcionales:
+                - nombre (str)
                 - nick_name (str)
                 - fecha (str)
                 - contrasena (str)
@@ -281,9 +284,13 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
             id_usuario_real = resultado[0]
 
             # Actualizar tabla usuarios
-            if 'nick_name' in data or 'fecha' in data:
+            if any(k in data for k in ('nombre', 'nick_name', 'fecha')):
                 campos_usuario = []
                 valores_usuario = []
+
+                if 'nombre' in data:
+                    campos_usuario.append("nombre = %s")
+                    valores_usuario.append(data['nombre'])
 
                 if 'nick_name' in data:
                     campos_usuario.append("nick_name = %s")
@@ -301,6 +308,7 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
                     WHERE id_usuario = %s;
                 """, tuple(valores_usuario))
                 log_info("Tabla 'usuarios' actualizada.")
+
 
             # Actualizar tabla detalle_usuarios
             if any(k in data for k in ('contrasena', 'grupo', 'email', 'estado_cuenta')):
@@ -363,56 +371,6 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
             self.cerrar_conexion()
             log_info("Transacción de actualización finalizada.")
 
-
-        """
-        Elimina un usuario y su detalle asociado en base al ID.
-
-        Args:
-            id_usuario (int): ID del usuario a eliminar.
-
-        Returns:
-            dict: Respuesta estructurada con status, mensaje y data.
-        """
-        try:
-            self.conectar()
-            log_info(f"Iniciando eliminación del usuario {id_usuario}...")
-
-            # Verificar si el usuario existe
-            self.cursor.execute("SELECT 1 FROM usuarios WHERE id_usuario = %s;", (id_usuario,))
-            if not self.cursor.fetchone():
-                log_warning(f"Usuario con ID {id_usuario} no existe.")
-                return {
-                    "status": 404,
-                    "mensaje": "Usuario no encontrado.",
-                    "data": None
-                }
-
-            # Eliminar primero el detalle (clave foránea depende del usuario)
-            self.cursor.execute("DELETE FROM detalle_usuarios WHERE id_usuario = %s;", (id_usuario,))
-            log_info("Detalle del usuario eliminado.")
-
-            # Luego eliminar el usuario
-            self.cursor.execute("DELETE FROM usuarios WHERE id_usuario = %s;", (id_usuario,))
-            self.conn.commit()
-
-            log_success(f"Usuario con ID {id_usuario} eliminado correctamente.")
-
-            return {
-                "status": 200,
-                "mensaje": "Usuario eliminado exitosamente.",
-                "data": {"id_usuario": id_usuario}
-            }
-
-        except Exception as e:
-            self.conn.rollback()
-            log_error(f"Error al eliminar usuario: {str(e)}")
-            return {
-                "status": 500,
-                "mensaje": "Error interno al eliminar usuario.",
-                "data": None
-            }
-
-        finally:
             self.cerrar_conexion()
             log_info("Transacción de eliminación finalizada.")
 

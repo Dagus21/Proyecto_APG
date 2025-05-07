@@ -60,6 +60,21 @@ def funcionalidad_1():
 def funcionalidad_2():
     return render_with_base_templates(content_template='funcionalidad_2/statics/templates/funcionalidad_2_template.html', current_path='/f2')
 
+@app.route('/registro', methods=['POST'])
+def registro():
+    data = request.get_json()
+    correo = data.get('correo')
+    usuario = data.get('usuario')
+    nombre = data.get('nombre')
+    apellido = data.get('apellido')
+    contrasena = data.get('contrasena')
+
+    # Aquí deberías agregar la lógica para guardar los datos en una base de datos
+    print(f"Registrado: {usuario}, {correo}, {nombre} {apellido}")
+
+    return {'status': 'success'}
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':

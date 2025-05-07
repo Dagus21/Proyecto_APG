@@ -1,17 +1,18 @@
 #-------------------------------------------------------------
-#         Test de conexión y exploración de base de datos
+#     Test: Conexión y Exploración de Base de Datos + CRUD
 #-------------------------------------------------------------
 """
 Autor: Carlos Andrés Jiménez Sarmiento (CJ)
 
 Descripción:
-Este test automatizado valida la conexión a la base de datos PostgreSQL
-y explora su estructura: tablas, columnas, claves primarias y foráneas.
+Este archivo realiza pruebas automáticas para:
 
-Además, ejecuta pruebas unitarias para las operaciones CRUD del módulo
-Crud_Usuario_Detalle.
+1. Validar conexión a la base de datos PostgreSQL.
+2. Explorar estructura de tablas, columnas, claves primarias y foráneas.
+3. Ejecutar operaciones CRUD básicas sobre las tablas `usuarios` y `detalle_usuarios`.
 
-Compatible con Pytest y Allure. Ejecutable también de forma manual.
+Compatible con Pytest y Allure. También se puede ejecutar manualmente.
+Ubicación: Clases_Base/test/test_exploracion_crud.py
 """
 
 import pytest
@@ -21,13 +22,14 @@ from Clases_Base.Crud_Usuario_Detalle import CrudUsuarioDetalle
 from log import log_info, log_error, log_success
 
 #-------------------------------------------------------------
-#                    TEST EXPLORACIÓN DE ESTRUCTURA
+#               TEST 1: EXPLORACIÓN DE ESTRUCTURA BD
 #-------------------------------------------------------------
 
+@allure.feature("Base de Datos")
+@allure.title("Explora tablas, columnas y claves en la base de datos")
 def test_explorar_estructura_bd():
     """
-    Ejecuta una consulta que explora todas las tablas, columnas,
-    claves primarias y foráneas de la base de datos.
+    Explora tablas, columnas, claves primarias y foráneas de la base de datos.
     """
     conexion = Conexion_Data_Base()
     try:
@@ -40,12 +42,13 @@ def test_explorar_estructura_bd():
             ORDER BY table_schema, table_name;
         """)
         tablas = conexion.cursor.fetchall()
-        log_success(f"Se encontraron {len(tablas)} tablas.")
+        log_success(f"🧩 Se encontraron {len(tablas)} tablas.")
         assert len(tablas) > 0
 
         for schema, tabla in tablas:
             log_info(f"\n📄 Tabla: {schema}.{tabla}")
 
+            # Columnas
             conexion.cursor.execute("""
                 SELECT column_name, data_type, is_nullable
                 FROM information_schema.columns
@@ -56,6 +59,7 @@ def test_explorar_estructura_bd():
             for col in columnas:
                 log_info(f"    - {col[0]} ({col[1]}, NULLABLE: {col[2]})")
 
+            # Claves primarias
             conexion.cursor.execute("""
                 SELECT kcu.column_name
                 FROM information_schema.table_constraints tc
@@ -67,6 +71,7 @@ def test_explorar_estructura_bd():
             for pk in conexion.cursor.fetchall():
                 log_info(f"    🔑 PRIMARY KEY: {pk[0]}")
 
+            # Claves foráneas
             conexion.cursor.execute("""
                 SELECT kcu.column_name, ccu.table_schema, ccu.table_name, ccu.column_name
                 FROM information_schema.table_constraints tc
@@ -80,82 +85,116 @@ def test_explorar_estructura_bd():
             for fk in conexion.cursor.fetchall():
                 log_info(f"    🔗 FOREIGN KEY: {fk[0]} → {fk[1]}.{fk[2]}.{fk[3]}")
 
-        log_success("Exploración de estructura completada correctamente.")
-        assert True
-
+        log_success("✅ Exploración de estructura completada.")
     except Exception as e:
         log_error(f"❌ Error durante la exploración: {e}")
         assert False
     finally:
         conexion.cerrar_conexion()
-        log_info("Exploración finalizada.")
+        log_info("🧪 Test de exploración finalizado.")
 
 #-------------------------------------------------------------
-#                        TESTS DE CRUD
+#                   TESTS CRUD DE USUARIO
 #-------------------------------------------------------------
 
+@allure.feature("CRUD")
+@allure.title("Crear nuevo usuario con detalle")
 def test_crud_crear():
-    data = {
-        "nick_name": "Carlos_CJ",
-        "contrasena": "1234",
-        "email": "carjisar@gmail.com"
-    }
     crud = CrudUsuarioDetalle()
+    data = {
+        "nombre": "Carlos Andrés Jiménez Sarmiento",
+        "nick_name": "Carlos_CJ2",
+        "contrasena": "1234",
+        "email": "carjisar1@gmail.com"
+    }
     try:
-        print(crud.crear_usuario_con_detalle(data))
-        log_info("Usuario creado correctamente.")
-        log_success("CRUD test ejecutado correctamente.")
+        resultado = crud.crear_usuario_con_detalle(data)
+        print("Resultado crear:", resultado)
+        assert resultado["status"] == 201
+        log_success("✅ Usuario creado correctamente.")
     except Exception as e:
-        log_error(f"❌ Error en el CRUD test: {e}")
-    finally:
-        log_info("CRUD test finalizado.")
+        log_error(f"❌ Error al crear usuario: {e}")
+        assert False
 
+@allure.feature("CRUD")
+@allure.title("Leer todos los usuarios con detalle")
 def test_crud_leer_todos():
     crud = CrudUsuarioDetalle()
     try:
-        print(crud.leer_usuarios_con_detalle())
-        log_success("CRUD test ejecutado correctamente.")
+        resultado = crud.leer_usuarios_con_detalle()
+        print("Resultado leer todos:", resultado)
+        assert resultado["status"] == 200
+        log_success("✅ Usuarios leídos correctamente.")
     except Exception as e:
-        log_error(f"❌ Error en el CRUD test: {e}")
-    finally:
-        log_info("CRUD test finalizado.")
+        log_error(f"❌ Error al leer usuarios: {e}")
+        assert False
 
+@allure.feature("CRUD")
+@allure.title("Leer usuario por ID (o email/nick)")
 def test_crud_leer_por_id():
     crud = CrudUsuarioDetalle()
     try:
-        print(crud.leer_por_usuario(4))
-        log_success("CRUD test ejecutado correctamente.")
+        resultado = crud.leer_por_usuario(23)  # Puede ser int, email o nick
+        print("Resultado leer usuario:", resultado)
+        assert resultado["status"] == 200
+        log_success("✅ Usuario consultado correctamente.")
     except Exception as e:
-        log_error(f"❌ Error en el CRUD test: {e}")
-    finally:
-        log_info("CRUD test finalizado.")
+        log_error(f"❌ Error al consultar usuario: {e}")
+        assert False
 
+@allure.feature("CRUD")
+@allure.title("Actualizar datos del usuario")
 def test_crud_actualizar():
-    data = { "contrasena": "12345678" }
+    crud = CrudUsuarioDetalle()
+    data = {
+            "nombre": "Carlos Andrés Jiménez Sarmiento",
+            }
+    try:
+        resultado = crud.actualizar_usuario_con_detalle("carjisar@gmail.com", data)
+        print("Resultado actualizar:", resultado)
+        assert resultado["status"] == 200
+        log_success("✅ Usuario actualizado correctamente.")
+    except Exception as e:
+        log_error(f"❌ Error al actualizar usuario: {e}")
+        assert False
+        
+@allure.feature("CRUD")
+@allure.title("Eliminar usuario por Criterio")
+def test_crud_eliminar():
     crud = CrudUsuarioDetalle()
     try:
-        print(crud.actualizar_usuario_con_detalle(4, data))
-        log_success("CRUD test ejecutado correctamente.")
+        resultado = crud.eliminar_usuario_con_detalle(23)  # Puede ser int, email o nick
+        print("Resultado eliminar:", resultado)
+        assert resultado["status"] == 200
+        log_success("✅ Usuario eliminado correctamente.")
     except Exception as e:
-        log_error(f"❌ Error en el CRUD test: {e}")
-    finally:
-        log_info("CRUD test finalizado.")
+        log_error(f"❌ Error al eliminar usuario: {e}")
+        assert False
 
 #-------------------------------------------------------------
-#                TEST AUTOMÁTICO PARA PYTEST + ALLURE
-#-------------------------------------------------------------
-
-@allure.feature("Base de Datos")
-@allure.title("Verifica conexión y estructura general de la base de datos")
-def test_answer():
-    assert test_explorar_estructura_bd() is None  # Usa asserts internos
-
-#-------------------------------------------------------------
-#            EJECUCIÓN MANUAL (para pruebas locales)
+#               EJECUCIÓN MANUAL DE PRUEBAS
 #-------------------------------------------------------------
 
 if __name__ == "__main__":
     try:
-        test_answer()
+        #print("\n🔎 Exploración de BD")
+        #test_explorar_estructura_bd()
+
+        #print("\n🛠️ Crear usuario")
+        #test_crud_crear()
+
+        
+        #print("\n✏️ Actualizar usuario")
+        #test_crud_actualizar()
+        
+        print("\n🔍 Leer usuario por ID")
+        test_crud_leer_por_id()
+        
+        #print("\n🗑️ Eliminar usuario")
+        #test_crud_eliminar()
+        
+        #print("\n📋 Leer todos los usuarios")
+        #test_crud_leer_todos()
+        
     except Exception as e:
-        log_error(f"❌ Error al ejecutar manualmente: {e}")
+        log_error(f"❌ Error general al ejecutar manualmente: {e}")

@@ -44,20 +44,22 @@
 
     <div id="login" class="main">
       <h2>Iniciar Sesión</h2>
-      <input id="usuarioLogin" type="text" placeholder="Usuario" />
-      <div class="input-group">
-        <input type="password" id="loginPass" placeholder="Contraseña" />
-        <button
-          type="button"
-          class="toggle-password"
-          onclick="togglePassword('loginPass', this)"
-          data-show="{{ url_for('static', filename='image/eye.svg') }}"
-          data-hide="{{ url_for('static', filename='image/eye_close.svg') }}"
-        >
-          <img src="{{ url_for('static', filename='image/eye.svg') }}" alt="Mostrar contraseña" class="icono-ojo" />
-        </button>
-      </div>
-      <button onclick="validarLogin()">Iniciar sesión</button>
+      <form action="{{ url_for('login') }}" method="post">
+        <input id="usuarioLogin" name="username" type="text" placeholder="Usuario" />
+        <div class="input-group">
+          <input type="password" id="loginPass" name="password" placeholder="Contraseña" />
+          <button
+            type="button"
+            class="toggle-password"
+            onclick="togglePassword('loginPass', this)"
+            data-show="{{ url_for('static', filename='image/eye.svg') }}"
+            data-hide="{{ url_for('static', filename='image/eye_close.svg') }}"
+          >
+            <img src="{{ url_for('static', filename='image/eye.svg') }}" alt="Mostrar contraseña" class="icono-ojo" />
+          </button>
+        </div>
+        <button onclick="validarLogin()" type="submit">Iniciar sesión</button>
+      </form>
       <div class="link" onclick="mostrar('recuperar')">
         ¿Olvidaste tu contraseña?
       </div>
@@ -85,6 +87,8 @@
       <button onclick="mostrar('home')">Enviar</button>
     </div>
 
-    
+
   </body>
 </html>
+
+
