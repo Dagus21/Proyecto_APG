@@ -1,0 +1,45 @@
+{% extends "base_public.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('reestablecer.static', filename='css/Reestablecer_Contrasena.css') }}">
+{% endblock %}
+
+{% block title %}Reestablecer Contraseña - Proyecto APG{% endblock %}
+
+{% block content %}
+<main>
+    <div class="main active">
+        <h2>¿Olvidaste tu contraseña?</h2>
+        <p class="subtitulo">Ingresa tu correo electrónico y te enviaremos un enlace para restablecerla.</p>
+
+        {% if mensaje %}
+        <div class="mensaje-info" role="alert">
+            {{ mensaje }}
+            <button class="close-btn" aria-label="Cerrar mensaje" onclick="this.parentElement.style.display='none'">×</button>
+        </div>
+        {% endif %}
+
+        {% if session.get('mensaje_error') %}
+        <div class="mensaje-error" role="alert">
+            {{ session.pop('mensaje_error') }}
+            <button class="close-btn" aria-label="Cerrar mensaje" onclick="this.parentElement.style.display='none'">×</button>
+        </div>
+        {% endif %}
+
+        <form id="reestablecerForm" autocomplete="off" aria-labelledby="reestablecerFormTitle">
+            <h2 id="reestablecerFormTitle" class="sr-only">Formulario para restablecer la contraseña</h2>
+            <div class="input-group">
+                <label for="email" class="sr-only">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required aria-describedby="emailHelp" />
+            </div>
+            <button type="submit" class="btn-principal" id="btnEnviar">Enviar enlace</button>
+            <a href="/login" class="link">Volver al inicio de sesión</a>
+        </form>
+    </div>
+</main>
+<div id="notificacion" class="notificacion" role="alert"></div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('reestablecer.static', filename='js/Reestablecer_Contrasena.js') }}"></script>
+{% endblock %}

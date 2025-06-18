@@ -103,9 +103,9 @@ def test_crud_crear():
     crud = CrudUsuarioDetalle()
     data = {
         "nombre": "Carlos Andrés Jiménez Sarmiento",
-        "nick_name": "Carlos_CJ2",
+        "nick_name": "CJ",
         "contrasena": "1234",
-        "email": "carjisar1@gmail.com"
+        "email": "carjisar@gmail.com"
     }
     try:
         resultado = crud.crear_usuario_con_detalle(data)
@@ -149,9 +149,10 @@ def test_crud_actualizar():
     data = {
             "contrasena": "1234",
             "estado_cuenta": False,
+            "email": "carjisar@gmail.com"
             }
     try:
-        resultado = crud.actualizar_usuario_con_detalle("carlos1006744921@gmail.com", data)
+        resultado = crud.actualizar_usuario_con_detalle("CJ", data)
         print("Resultado actualizar:", resultado)
         assert resultado["status"] == 200
         log_success("✅ Usuario actualizado correctamente.")
@@ -188,14 +189,14 @@ if __name__ == "__main__":
         print("\n✏️ Actualizar usuario")
         test_crud_actualizar()
         
-        print("\n🔍 Leer usuario por ID")
-        test_crud_leer_por_id()
+        #print("\n🔍 Leer usuario por ID")
+        #test_crud_leer_por_id()
         
         #print("\n🗑️ Eliminar usuario")
         #test_crud_eliminar()
         
-        #print("\n📋 Leer todos los usuarios")
-        #test_crud_leer_todos()
+        print("\n📋 Leer todos los usuarios")
+        test_crud_leer_todos()
         
     except Exception as e:
         log_error(f"❌ Error general al ejecutar manualmente: {e}")

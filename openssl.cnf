@@ -1,0 +1,22 @@
+[ req ]
+distinguished_name = req_distinguished_name
+x509_extensions = v3_ca
+prompt = yes
+
+[ req_distinguished_name ]
+countryName = Country Name (2 letter code)
+countryName_default = CO
+stateOrProvinceName = State or Province Name (full name)
+stateOrProvinceName_default = Norte de Santander
+localityName = Locality Name (eg, city)
+localityName_default = Cúcuta
+organizationName = Organization Name (eg, company)
+organizationName_default = Proyecto APG
+commonName = Common Name (e.g. server FQDN or YOUR name)
+commonName_default = proyectoapg.zapto.org
+
+[ v3_ca ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = proyectoapg.zapto.org

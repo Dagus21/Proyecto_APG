@@ -22,7 +22,7 @@ from datetime import date
 import psycopg2
 from Clases_Base.Conexion_Data_Base import Conexion_Data_Base
 from log import log_info, log_error, log_success, log_warning
-from datetime import date  # Asegúrate de tenerlo importado arriba
+from datetime import date 
 import bcrypt
 
 class CrudUsuarioDetalle(Conexion_Data_Base):

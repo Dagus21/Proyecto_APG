@@ -160,7 +160,7 @@ class GestionLogin(CrudUsuarioDetalle):
             token = serializer.dumps(correo, salt="verificacion-cuenta")
 
             # Construcción del link de verificación
-            dominio = os.getenv("FRONTEND_URL", "http://localhost:5000")
+            dominio = os.getenv("DIRECCION_URL", "http://localhost:5000")
             link = f"{dominio}/login/verificar/{token}"
             log_info(f"Link generado: {link}")
 

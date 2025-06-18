@@ -1095,3 +1095,440 @@ with app.app_context(). See the documentation for more information.
 2025-05-07 03:31:59,148 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
 2025-05-07 03:31:59,149 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Finalización de consulta de usuario.
 2025-05-07 03:31:59,150 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario consultado correctamente.
+2025-05-07 12:28:56,054 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:28:56,060 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-07 12:28:56,239 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-05-07 12:28:56,245 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:28:56,257 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-07 12:29:10,339 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:29:10,344 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-07 12:29:10,520 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-05-07 12:29:10,526 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:29:10,536 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-07 12:29:21,234 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:29:21,242 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-07 12:29:21,421 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-05-07 12:29:21,428 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:29:21,439 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-07 12:29:35,761 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:29:35,765 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-07 12:29:35,953 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-05-07 12:29:35,957 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:29:35,962 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-07 12:30:00,607 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:30:00,609 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-07 12:30:00,781 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-05-07 12:30:00,785 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:30:00,785 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-07 12:30:05,049 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:30:05,054 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-07 12:30:05,229 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-05-07 12:30:05,238 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:30:05,247 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-07 12:30:58,929 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:30:58,929 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-07 12:30:59,111 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 38 registros de usuarios con detalles.
+2025-05-07 12:30:59,112 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:30:59,113 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-07 12:30:59,132 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-07 12:31:28,477 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:31:28,477 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario por 'd.email' = 'carlos1006744921@gmail.com'...
+2025-05-07 12:31:28,648 - WARNING - Archivo: log.py - Línea: 139 - [WARNING] [main_test.py] No se encontró usuario con el id_usuario 'carlos1006744921@gmail.com'.
+2025-05-07 12:31:28,649 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:31:28,650 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-05-07 12:31:28,651 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:31:28,653 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-05-07 12:31:28,655 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main_test.py] ❌ Error al actualizar usuario: 
+2025-05-07 12:31:28,656 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [<frozen runpy>] ❌ Error general al ejecutar manualmente: 
+2025-05-07 12:32:51,903 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:32:51,903 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-05-07 12:32:52,492 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 166
+2025-05-07 12:32:52,672 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Usuario y detalle insertados correctamente.
+2025-05-07 12:32:52,678 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:32:52,685 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-05-07 12:32:57,864 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:32:57,879 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-07 12:32:58,552 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-05-07 12:32:58,557 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:32:58,569 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-07 12:33:10,247 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carlos1006744921@gmail.com'...
+2025-05-07 12:33:10,253 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: http://localhost:5000/login/verificar/ImNhcmxvczEwMDY3NDQ5MjFAZ21haWwuY29tIg.aBuZVg.cfk5jo33QFzWlSMhY7A1jI5_cR8
+2025-05-07 12:33:14,678 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carlos1006744921@gmail.com'.
+2025-05-07 12:33:32,419 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando verificación de token...
+2025-05-07 12:33:32,428 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Token válido para correo 'carlos1006744921@gmail.com'. Procediendo a activar cuenta...
+2025-05-07 12:33:33,087 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:33:33,096 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Iniciando actualización del usuario por 'd.email' = 'carlos1006744921@gmail.com'...
+2025-05-07 12:33:33,361 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-07 12:33:33,452 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [GestionLogin.py] Usuario actualizado correctamente con ID 166.
+2025-05-07 12:33:33,469 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:33:33,499 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de actualización finalizada.
+2025-05-07 12:33:33,542 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:33:33,548 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de eliminación finalizada.
+2025-05-07 12:33:33,550 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Cuenta verificada exitosamente.
+2025-05-07 12:33:57,419 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-07 12:33:57,423 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-07 12:33:57,999 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-05-07 12:33:58,004 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-07 12:33:58,007 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-07 12:34:11,686 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Sesión cerrada correctamente.
+2025-05-27 14:16:26,190 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:16:26,199 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-05-27 14:16:27,307 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 1
+2025-05-27 14:16:27,621 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Usuario y detalle insertados correctamente.
+2025-05-27 14:16:27,637 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:16:27,651 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-05-27 14:16:40,936 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:16:40,947 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-27 14:16:41,755 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-05-27 14:16:41,761 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:16:41,763 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-27 14:17:14,689 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-05-27 14:17:14,695 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: http://localhost:5000/login/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aDYPug.S9ABcIoO30i53a3GxBUulMQqKZc
+2025-05-27 14:17:20,452 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar@gmail.com'.
+2025-05-27 14:17:35,695 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando verificación de token...
+2025-05-27 14:17:35,700 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Token válido para correo 'carjisar@gmail.com'. Procediendo a activar cuenta...
+2025-05-27 14:17:36,498 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:17:36,503 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Iniciando actualización del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-05-27 14:17:36,779 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Tabla 'detalle_usuarios' actualizada.
+2025-05-27 14:17:36,880 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [GestionLogin.py] Usuario actualizado correctamente con ID 1.
+2025-05-27 14:17:36,884 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:17:36,884 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de actualización finalizada.
+2025-05-27 14:17:36,892 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:17:36,899 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de eliminación finalizada.
+2025-05-27 14:17:36,904 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Cuenta verificada exitosamente.
+2025-05-27 14:17:43,706 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:17:43,710 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-27 14:17:43,906 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-05-27 14:17:43,906 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:17:43,911 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-27 14:17:55,560 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:17:55,585 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-27 14:17:56,219 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-05-27 14:17:56,222 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:17:56,225 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-27 14:25:32,881 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:25:33,239 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] 🧩 Se encontraron 2 tablas.
+2025-05-27 14:25:33,243 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 
+📄 Tabla: public.detalle_usuarios
+2025-05-27 14:25:33,426 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - id_detalle_usuarios (integer, NULLABLE: NO)
+2025-05-27 14:25:33,429 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - id_usuario (integer, NULLABLE: NO)
+2025-05-27 14:25:33,438 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - contrasena (text, NULLABLE: NO)
+2025-05-27 14:25:33,445 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - token (text, NULLABLE: YES)
+2025-05-27 14:25:33,454 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - grupo (integer, NULLABLE: NO)
+2025-05-27 14:25:33,458 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - email (character varying, NULLABLE: NO)
+2025-05-27 14:25:33,460 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - estado_cuenta (boolean, NULLABLE: NO)
+2025-05-27 14:25:33,630 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     🔑 PRIMARY KEY: id_detalle_usuarios
+2025-05-27 14:25:33,812 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 
+📄 Tabla: public.usuarios
+2025-05-27 14:25:33,988 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - id_usuario (integer, NULLABLE: NO)
+2025-05-27 14:25:33,993 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - nick_name (character varying, NULLABLE: NO)
+2025-05-27 14:25:33,996 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - fecha (date, NULLABLE: NO)
+2025-05-27 14:25:34,000 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - nombre (character varying, NULLABLE: YES)
+2025-05-27 14:25:34,140 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     🔑 PRIMARY KEY: id_usuario
+2025-05-27 14:25:34,343 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Exploración de estructura completada.
+2025-05-27 14:25:34,347 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:25:34,351 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 🧪 Test de exploración finalizado.
+2025-05-27 14:25:35,678 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:25:35,683 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-27 14:25:36,103 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 1 registros de usuarios con detalles.
+2025-05-27 14:25:36,106 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:25:36,106 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-27 14:25:36,112 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-27 14:28:46,389 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [Crud_Usuario_Detalle.py] Error al conectar con PostgreSQL: could not translate host name "hashing-bd.cw94q8sgiyyo.us-east-1.rds.amazonaws.com" to address: Host desconocido. 
+
+2025-05-27 14:28:46,395 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:28:46,412 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-05-27 14:28:48,791 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [Crud_Usuario_Detalle.py] Error al conectar con PostgreSQL: could not translate host name "hashing-bd.cw94q8sgiyyo.us-east-1.rds.amazonaws.com" to address: Host desconocido. 
+
+2025-05-27 14:28:48,794 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:28:48,796 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-05-27 14:29:06,661 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [Crud_Usuario_Detalle.py] Error al conectar con PostgreSQL: could not translate host name "hashing-bd.cw94q8sgiyyo.us-east-1.rds.amazonaws.com" to address: Host desconocido. 
+
+2025-05-27 14:29:06,667 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:29:06,667 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-05-27 14:29:27,525 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [Crud_Usuario_Detalle.py] Error al conectar con PostgreSQL: could not translate host name "hashing-bd.cw94q8sgiyyo.us-east-1.rds.amazonaws.com" to address: Host desconocido. 
+
+2025-05-27 14:29:27,529 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:29:27,529 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-05-27 14:30:05,529 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [GestionLogin.py] Error al conectar con PostgreSQL: could not translate host name "hashing-bd.cw94q8sgiyyo.us-east-1.rds.amazonaws.com" to address: Host desconocido. 
+
+2025-05-27 14:30:05,540 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Error en login: could not translate host name "hashing-bd.cw94q8sgiyyo.us-east-1.rds.amazonaws.com" to address: Host desconocido. 
+
+2025-05-27 14:30:05,546 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:30:05,550 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-27 14:30:53,907 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [GestionLogin.py] Error al conectar con PostgreSQL: could not translate host name "hashing-bd.cw94q8sgiyyo.us-east-1.rds.amazonaws.com" to address: Host desconocido. 
+
+2025-05-27 14:30:53,916 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Error en login: could not translate host name "hashing-bd.cw94q8sgiyyo.us-east-1.rds.amazonaws.com" to address: Host desconocido. 
+
+2025-05-27 14:30:53,939 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:30:53,941 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-27 14:33:03,174 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:33:03,596 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] 🧩 Se encontraron 2 tablas.
+2025-05-27 14:33:03,608 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 
+📄 Tabla: public.detalle_usuarios
+2025-05-27 14:33:03,703 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - id_detalle_usuarios (integer, NULLABLE: NO)
+2025-05-27 14:33:03,707 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - id_usuario (integer, NULLABLE: NO)
+2025-05-27 14:33:03,707 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - contrasena (text, NULLABLE: NO)
+2025-05-27 14:33:03,707 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - token (text, NULLABLE: YES)
+2025-05-27 14:33:03,707 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - grupo (integer, NULLABLE: NO)
+2025-05-27 14:33:03,714 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - email (character varying, NULLABLE: NO)
+2025-05-27 14:33:03,714 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - estado_cuenta (boolean, NULLABLE: NO)
+2025-05-27 14:33:03,907 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     🔑 PRIMARY KEY: id_detalle_usuarios
+2025-05-27 14:33:04,108 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 
+📄 Tabla: public.usuarios
+2025-05-27 14:33:04,315 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - id_usuario (integer, NULLABLE: NO)
+2025-05-27 14:33:04,320 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - nick_name (character varying, NULLABLE: NO)
+2025-05-27 14:33:04,321 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - fecha (date, NULLABLE: NO)
+2025-05-27 14:33:04,324 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     - nombre (character varying, NULLABLE: YES)
+2025-05-27 14:33:04,402 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py]     🔑 PRIMARY KEY: id_usuario
+2025-05-27 14:33:04,555 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Exploración de estructura completada.
+2025-05-27 14:33:04,569 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:33:04,578 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] 🧪 Test de exploración finalizado.
+2025-05-27 14:33:05,757 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:33:05,757 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-27 14:33:06,157 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 1 registros de usuarios con detalles.
+2025-05-27 14:33:06,164 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:33:06,164 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-27 14:33:06,164 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-05-27 14:33:44,301 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:33:44,306 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-05-27 14:33:45,377 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 2
+2025-05-27 14:33:45,801 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Usuario y detalle insertados correctamente.
+2025-05-27 14:33:45,806 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:33:45,813 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-05-27 14:33:56,133 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:33:56,158 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-05-27 14:33:57,142 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-05-27 14:33:57,146 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:33:57,146 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-05-27 14:34:34,188 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión establecida exitosamente con la base de datos PostgreSQL.
+2025-05-27 14:34:34,191 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-05-27 14:34:34,533 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 2 registros de usuarios con detalles.
+2025-05-27 14:34:34,543 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] Conexión con la base de datos cerrada correctamente.
+2025-05-27 14:34:34,543 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-05-27 14:34:34,548 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-06-05 07:25:06,059 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 07:25:06,060 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando inserción de nuevo usuario y detalle...
+2025-06-05 07:25:06,310 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Usuario creado con ID: 1
+2025-06-05 07:25:06,318 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario y detalle insertados correctamente.
+2025-06-05 07:25:06,320 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 07:25:06,321 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de creación de usuario finalizada.
+2025-06-05 07:25:06,327 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario creado correctamente.
+2025-06-05 07:25:06,375 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 07:25:06,377 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-06-05 07:25:06,381 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 1 registros de usuarios con detalles.
+2025-06-05 07:25:06,383 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 07:25:06,384 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-06-05 07:25:06,386 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-06-05 07:25:49,219 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 07:25:49,224 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 07:25:49,661 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-05 07:25:49,666 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 07:25:49,670 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 07:25:55,993 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Sesión cerrada correctamente.
+2025-06-05 07:31:26,274 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 07:31:26,276 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 07:31:26,488 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-05 07:31:26,489 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 07:31:26,491 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 07:31:32,351 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Sesión cerrada correctamente.
+2025-06-05 07:57:21,663 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 07:57:21,665 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-06-05 07:57:21,922 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 2
+2025-06-05 07:57:21,934 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Usuario y detalle insertados correctamente.
+2025-06-05 07:57:21,944 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 07:57:21,956 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-06-05 07:57:47,753 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 07:57:47,755 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 07:57:47,761 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-06-05 07:57:47,763 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 07:57:47,766 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 07:58:16,851 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 07:58:16,853 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 07:58:17,060 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-05 07:58:17,062 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 07:58:17,066 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 09:49:28,075 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:49:28,078 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-06-05 09:49:28,331 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 3
+2025-06-05 09:49:28,346 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Usuario y detalle insertados correctamente.
+2025-06-05 09:49:28,349 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:49:28,351 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-06-05 09:50:01,397 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:50:01,402 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 09:50:01,424 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-06-05 09:50:01,439 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:50:01,443 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 09:51:14,243 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:51:14,247 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 09:51:14,253 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-06-05 09:51:14,254 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:51:14,257 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 09:51:38,436 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:51:38,437 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 09:51:38,442 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-06-05 09:51:38,443 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:51:38,446 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 09:53:54,461 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:53:54,463 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-06-05 09:53:54,705 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 4
+2025-06-05 09:53:54,714 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Violación de integridad: llave duplicada viola restricción de unicidad «detalle_usuarios_email_key»
+DETAIL:  Ya existe la llave (email)=(jirehysm@gmail.com).
+
+2025-06-05 09:53:54,716 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:53:54,718 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-06-05 09:54:02,721 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:54:02,724 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 09:54:02,877 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:54:02,879 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-06-05 09:54:02,943 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-05 09:54:02,945 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:54:02,946 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 09:54:03,085 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:54:03,086 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-06-05 09:54:09,330 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar1@gmail.com'...
+2025-06-05 09:54:09,334 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: http://192.168.1.23:2323/login/verificar/ImNhcmppc2FyMUBnbWFpbC5jb20i.aEGvkQ.-TT9CWWqgOou0DSct1Cu-tpMxR8
+2025-06-05 09:54:13,626 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar1@gmail.com'.
+2025-06-05 09:54:37,515 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:54:37,517 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-06-05 09:54:37,723 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 5
+2025-06-05 09:54:37,727 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Violación de integridad: llave duplicada viola restricción de unicidad «detalle_usuarios_email_key»
+DETAIL:  Ya existe la llave (email)=(jirehysm@gmail.com).
+
+2025-06-05 09:54:37,729 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:54:37,730 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-06-05 09:54:39,754 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:54:39,756 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-06-05 09:54:39,961 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 6
+2025-06-05 09:54:39,966 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Violación de integridad: llave duplicada viola restricción de unicidad «detalle_usuarios_email_key»
+DETAIL:  Ya existe la llave (email)=(jirehysm@gmail.com).
+
+2025-06-05 09:54:39,968 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:54:39,970 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-06-05 09:54:58,415 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:54:58,416 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-06-05 09:54:58,621 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 7
+2025-06-05 09:54:58,645 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Usuario y detalle insertados correctamente.
+2025-06-05 09:54:58,647 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:54:58,649 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-06-05 09:55:05,890 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar1@gmail.com'...
+2025-06-05 09:55:05,891 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: http://192.168.1.23:2323/login/verificar/ImNhcmppc2FyMUBnbWFpbC5jb20i.aEGvyQ.5EiNwi9p30gFGh3XnjpkRvpy7fA
+2025-06-05 09:55:10,231 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar1@gmail.com'.
+2025-06-05 09:55:20,544 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:55:20,546 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 09:55:20,550 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-06-05 09:55:20,551 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:55:20,554 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 09:55:58,077 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:55:58,079 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 09:55:58,091 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Usuario no encontrado.
+2025-06-05 09:55:58,094 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:55:58,096 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 09:56:37,610 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 09:56:37,613 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 09:56:37,863 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-05 09:56:37,865 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 09:56:37,867 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 09:56:43,792 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar1@gmail.com'...
+2025-06-05 09:56:43,794 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: http://192.168.1.23:2323/login/verificar/ImNhcmppc2FyMUBnbWFpbC5jb20i.aEGwKw.8BX_BwtmJNjr46r13Q9dp38GoAA
+2025-06-05 09:56:48,027 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar1@gmail.com'.
+2025-06-05 10:00:51,007 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar1@gmail.com'...
+2025-06-05 10:00:51,009 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: proyectoapg.zapto.org:2323/login/verificar/ImNhcmppc2FyMUBnbWFpbC5jb20i.aEGxIw.a2Ershmj_gN9DvldIEEtw5GK2LA
+2025-06-05 10:00:56,191 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar1@gmail.com'.
+2025-06-05 10:00:57,775 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar1@gmail.com'...
+2025-06-05 10:00:57,777 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: proyectoapg.zapto.org:2323/login/verificar/ImNhcmppc2FyMUBnbWFpbC5jb20i.aEGxKQ.Ey7AlnG0juCn4plRueCsShv78Io
+2025-06-05 10:01:01,756 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar1@gmail.com'.
+2025-06-05 10:02:24,445 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar1@gmail.com'...
+2025-06-05 10:02:24,447 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: proyectoapg.zapto.org:2323/login/verificar/ImNhcmppc2FyMUBnbWFpbC5jb20i.aEGxgA.WeVxcJ3uEi0h8Jj-cH8bziEXbiA
+2025-06-05 10:02:29,001 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar1@gmail.com'.
+2025-06-05 10:03:23,870 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar1@gmail.com'...
+2025-06-05 10:03:23,872 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: https://proyectoapg.zapto.org:2323/login/verificar/ImNhcmppc2FyMUBnbWFpbC5jb20i.aEGxuw.uZcbKTKGNs0IHDCIOMcy1y1ZVtk
+2025-06-05 10:03:27,914 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar1@gmail.com'.
+2025-06-05 10:04:26,412 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar1@gmail.com'...
+2025-06-05 10:04:26,415 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: https://proyectoapg.zapto.org:2323/login/verificar/ImNhcmppc2FyMUBnbWFpbC5jb20i.aEGx-g.g5Zz7VNY87d3OBk0rkM6vel1R_0
+2025-06-05 10:04:30,515 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar1@gmail.com'.
+2025-06-05 10:06:27,898 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 10:06:27,899 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando actualización del usuario por 'u.nick_name' = 'CJ'...
+2025-06-05 10:06:28,110 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Tabla 'detalle_usuarios' actualizada.
+2025-06-05 10:06:28,113 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Usuario actualizado correctamente con ID 1.
+2025-06-05 10:06:28,115 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 10:06:28,116 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de actualización finalizada.
+2025-06-05 10:06:28,118 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 10:06:28,120 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Transacción de eliminación finalizada.
+2025-06-05 10:06:28,123 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuario actualizado correctamente.
+2025-06-05 10:06:28,167 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 10:06:28,170 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Iniciando lectura de usuarios y sus detalles...
+2025-06-05 10:06:28,176 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] Se recuperaron 4 registros de usuarios con detalles.
+2025-06-05 10:06:28,177 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 10:06:28,179 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main_test.py] Lectura de usuarios con detalles finalizada.
+2025-06-05 10:06:28,183 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main_test.py] ✅ Usuarios leídos correctamente.
+2025-06-05 10:06:49,766 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Sesión cerrada correctamente.
+2025-06-05 10:06:57,272 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 10:06:57,274 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 10:06:57,497 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-05 10:06:57,501 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 10:06:57,520 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-05 10:07:02,276 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carjisar@gmail.com'...
+2025-06-05 10:07:02,278 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: https://proyectoapg.zapto.org:2323/login/verificar/ImNhcmppc2FyQGdtYWlsLmNvbSI.aEGylg.a51x7D0TaIiafJiseqqW69Js_yA
+2025-06-05 10:07:06,541 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carjisar@gmail.com'.
+2025-06-05 10:07:20,316 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando verificación de token...
+2025-06-05 10:07:20,318 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Token válido para correo 'carjisar@gmail.com'. Procediendo a activar cuenta...
+2025-06-05 10:07:20,384 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 10:07:20,386 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Iniciando actualización del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-06-05 10:07:20,395 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Tabla 'detalle_usuarios' actualizada.
+2025-06-05 10:07:20,399 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [GestionLogin.py] Usuario actualizado correctamente con ID 1.
+2025-06-05 10:07:20,403 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 10:07:20,406 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de actualización finalizada.
+2025-06-05 10:07:20,416 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 10:07:20,426 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de eliminación finalizada.
+2025-06-05 10:07:20,432 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Cuenta verificada exitosamente.
+2025-06-05 10:07:30,803 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-05 10:07:30,805 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-05 10:07:31,011 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-05 10:07:31,012 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-05 10:07:31,013 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-08 13:59:31,084 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-08 13:59:31,090 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando inserción de nuevo usuario y detalle...
+2025-06-08 13:59:31,682 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Usuario creado con ID: 8
+2025-06-08 13:59:31,728 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Usuario y detalle insertados correctamente.
+2025-06-08 13:59:31,750 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-08 13:59:31,784 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Transacción de creación de usuario finalizada.
+2025-06-08 13:59:43,824 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-08 13:59:43,844 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-08 13:59:44,453 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-08 13:59:44,460 - ERROR - Archivo: log.py - Línea: 152 - [ERROR] [main.py] Error en login: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2025-06-08 13:59:44,470 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-08 13:59:44,487 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-08 14:00:50,633 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-08 14:00:50,635 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-08 14:00:50,872 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-08 14:00:50,893 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-08 14:00:50,900 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-08 14:00:55,195 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando generación de token para correo 'carlos1006744921@gmail.com'...
+2025-06-08 14:00:55,202 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Link generado: https://proyectoapg.zapto.org:2323/login/verificar/ImNhcmxvczEwMDY3NDQ5MjFAZ21haWwuY29tIg.aEXd5w.akzUQeYaBvnrKKUbNXwlhQnUdVo
+2025-06-08 14:00:59,772 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Correo de verificación enviado correctamente a 'carlos1006744921@gmail.com'.
+2025-06-08 14:01:18,269 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando verificación de token...
+2025-06-08 14:01:18,272 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Token válido para correo 'carlos1006744921@gmail.com'. Procediendo a activar cuenta...
+2025-06-08 14:01:18,360 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-08 14:01:18,367 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Iniciando actualización del usuario por 'd.email' = 'carlos1006744921@gmail.com'...
+2025-06-08 14:01:18,433 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Tabla 'detalle_usuarios' actualizada.
+2025-06-08 14:01:18,440 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [GestionLogin.py] Usuario actualizado correctamente con ID 8.
+2025-06-08 14:01:18,523 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-08 14:01:18,596 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de actualización finalizada.
+2025-06-08 14:01:18,650 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-08 14:01:18,688 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] Transacción de eliminación finalizada.
+2025-06-08 14:01:18,732 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Cuenta verificada exitosamente.
+2025-06-08 14:01:37,376 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Sesión cerrada correctamente.
+2025-06-08 14:01:48,724 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-08 14:01:48,727 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Verificando existencia de usuario...
+2025-06-08 14:01:49,187 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [main.py] Login exitoso.
+2025-06-08 14:01:49,192 - INFO - Archivo: log.py - Línea: 126 - [INFO] [GestionLogin.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-08 14:01:49,196 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Proceso de login finalizado.
+2025-06-08 14:07:58,620 - INFO - Archivo: log.py - Línea: 126 - [INFO] [ReestablecerContrasena.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-08 14:07:58,627 - INFO - Archivo: log.py - Línea: 126 - [INFO] [main.py] Iniciando solicitud de reestablecimiento para email: carjisar@gmail.com
+2025-06-08 14:07:58,723 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] ✅ Conexión establecida exitosamente con la base de datos PostgreSQL local.
+2025-06-08 14:07:58,727 - INFO - Archivo: log.py - Línea: 126 - [INFO] [ReestablecerContrasena.py] Iniciando búsqueda del usuario por 'd.email' = 'carjisar@gmail.com'...
+2025-06-08 14:07:58,749 - INFO - Archivo: log.py - Línea: 193 - [SUCCESS] [ReestablecerContrasena.py] Consulta completada para el id_usuario 'carjisar@gmail.com'.
+2025-06-08 14:07:58,765 - INFO - Archivo: log.py - Línea: 126 - [INFO] [Crud_Usuario_Detalle.py] 🔒 Conexión con la base de datos cerrada correctamente.
+2025-06-08 14:07:58,773 - INFO - Archivo: log.py - Línea: 126 - [INFO] [ReestablecerContrasena.py] Finalización de consulta de usuario.
+2025-06-08 14:07:58,788 - INFO - Archivo: log.py - Línea: 126 - [INFO] [ReestablecerContrasena.py] 🔒 Conexión con la base de datos cerrada correctamente.

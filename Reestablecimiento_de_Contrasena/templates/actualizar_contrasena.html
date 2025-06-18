@@ -1,0 +1,36 @@
+{% extends "base_aux.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('reestablecer.static', filename='css/actualizar_contrasena.css') }}">
+{% endblock %}
+
+{% block title %}Cambiar Contraseña - Proyecto APG{% endblock %}
+
+{% block content %}
+<main>
+  <div class="main active">
+    <h2>Establecer Nueva Contraseña</h2>
+    <form id="form-cambiar-contrasena" method="POST" action="{{ url_for('reestablecer.cambiar_contrasena', token=token) }}">
+      <div class="input-group">
+        <input id="nueva_contrasena" type="password" name="nueva_contrasena" placeholder="Nueva Contraseña" required>
+        <button type="button" class="toggle-password" onclick="togglePassword(this, 'nueva_contrasena')">👁️</button>
+      </div>
+
+      <div class="input-group">
+        <input id="confirmar_contrasena" type="password" name="confirmar_contrasena" placeholder="Confirmar Nueva Contraseña" required>
+        <button type="button" class="toggle-password" onclick="togglePassword(this, 'confirmar_contrasena')">👁️</button>
+      </div>
+
+      <button type="submit" class="btn-principal">Restablecer Contraseña</button>
+    </form>
+    
+    <p id="msg-error" class="error-text {% if not mensaje %}hidden{% endif %}">
+        {{ mensaje }}
+    </p>
+  </div>
+</main>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('reestablecer.static', filename='js/actualizar_contrasena.js') }}"></script>
+{% endblock %}
