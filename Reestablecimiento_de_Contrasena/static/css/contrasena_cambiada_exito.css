@@ -1,0 +1,38 @@
+.main.active {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 2rem 2rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+h2 {
+    color: #43a047;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+p {
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-principal {
+    background: linear-gradient(90deg, #5e35b1 0%, #7e57c2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(94,53,177,0.2);
+}

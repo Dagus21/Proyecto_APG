@@ -1,0 +1,21 @@
+{% extends "base_public.html" %}
+
+{% block title %}Contraseña cambiada - Proyecto APG{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('reestablecer.static', filename='css/contrasena_cambiada_exito.css') }}">
+{% endblock %}
+
+{% block content %}
+<main>
+  <div class="main active">
+    <h2>¡Contraseña restablecida!</h2>
+    <p>✅ Tu contraseña ha sido cambiada exitosamente.</p>
+    <a href="/login" class="btn-principal" style="display:block; margin-top: 2rem;">Ir al inicio de sesión</a>
+  </div>
+</main>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('reestablecer.static', filename='js/contrasena_cambiada_exito.js') }}"></script>
+{% endblock %}
