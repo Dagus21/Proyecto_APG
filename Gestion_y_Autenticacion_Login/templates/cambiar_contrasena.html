@@ -10,29 +10,32 @@
 <main>
   <div class="main active">
     <h2>Cambiar Contraseña</h2>
-    <form id="form-cambiar" method="POST" action="/login/cambiar-contrasena">
+    <form id="form-cambiar" method="POST" action="/login/cambiar-contrasena" autocomplete="off">
       <div class="input-group">
         <input id="actual" type="password" name="actual" placeholder="Contraseña Actual" required>
         <button type="button" class="toggle-password" onclick="togglePassword(this, 'actual')">👁️</button>
       </div>
-
       <div class="input-group">
-        <input id="nueva" type="password" name="nueva" placeholder="Nueva Contraseña" required>
+        <input id="nueva" type="password" name="nueva" placeholder="Nueva Contraseña" required aria-describedby="password-criteria">
         <button type="button" class="toggle-password" onclick="togglePassword(this, 'nueva')">👁️</button>
       </div>
-
+      <ul id="password-criteria" class="criteria-list" aria-live="polite">
+        <li id="req-len">Entre 8 y 16 caracteres</li>
+        <li id="req-nocontrol">Sin espacios</li>
+        <li id="req-upper">Al menos una mayúscula</li>
+        <li id="req-num">Al menos un número</li>
+        <li id="req-special">Al menos un carácter especial</li>
+      </ul>
       <div class="input-group">
-        <input id="confirmar" type="password" name="confirmar" placeholder="Confirmar Nueva Contraseña" required>
+        <input id="confirmar" type="password" name="confirmar" placeholder="Confirmar Nueva Contraseña" required aria-describedby="coincidencia-msg">
         <button type="button" class="toggle-password" onclick="togglePassword(this, 'confirmar')">👁️</button>
       </div>
-
-      <button type="submit" class="btn-principal">Actualizar Contraseña</button>
+      <p id="coincidencia-msg" class="coincidencia-text" aria-live="polite"></p>
+      <button type="submit" class="btn-principal" id="btn-cambiar">Actualizar Contraseña</button>
     </form>
-
     <p id="msg-error" class="error-text {% if not mensaje %}hidden{% endif %}">
-        {{ mensaje }}
-      </p>
-      
+      {{ mensaje }}
+    </p>
   </div>
 </main>
 {% endblock %}

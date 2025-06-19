@@ -445,6 +445,67 @@ class CrudUsuarioDetalle(Conexion_Data_Base):
             self.cerrar_conexion()
             log_info("Transacción de eliminación finalizada.")
 
+    def eliminar_usuarios_no_verificados_expirados(self):
+        """
+        Elimina usuarios que no han verificado su cuenta después de 72 horas desde la creación.
+
+        Returns:
+            dict: Respuesta estructurada con status, mensaje y data (cantidad eliminada).
+        """
+        try:
+            self.conectar()
+            log_info("Iniciando eliminación de cuentas no verificadas con más de 72 horas...")
+
+            # Calcular fecha límite (72 horas atrás)
+            from datetime import timedelta, datetime
+            limite = datetime.now().date() - timedelta(days=3)
+
+            # 1. Obtener IDs de usuarios no verificados y creados hace más de 72 horas
+            self.cursor.execute("""
+                SELECT u.id_usuario
+                FROM usuarios u
+                JOIN detalle_usuarios d ON u.id_usuario = d.id_usuario
+                WHERE d.estado_cuenta = FALSE
+                  AND u.fecha <= %s;
+            """, (limite, ))
+            ids_a_eliminar = [row[0] for row in self.cursor.fetchall()]
+
+            if not ids_a_eliminar:
+                log_info("No hay cuentas no verificadas para eliminar.")
+                return {
+                    "status": 200,
+                    "mensaje": "No hay cuentas expiradas por eliminar.",
+                    "data": {"cantidad_eliminada": 0}
+                }
+
+            # 2. Eliminar en cascada cada usuario
+            cantidad = 0
+            for id_usuario in ids_a_eliminar:
+                self.cursor.execute("DELETE FROM detalle_usuarios WHERE id_usuario = %s;", (id_usuario,))
+                self.cursor.execute("DELETE FROM usuarios WHERE id_usuario = %s;", (id_usuario,))
+                cantidad += 1
+
+            self.conn.commit()
+            log_success(f"Se eliminaron {cantidad} usuarios no verificados con más de 72 horas.")
+
+            return {
+                "status": 200,
+                "mensaje": f"Eliminados {cantidad} usuarios no verificados y expirados.",
+                "data": {"cantidad_eliminada": cantidad}
+            }
+
+        except Exception as e:
+            self.conn.rollback()
+            log_error(f"Error al eliminar cuentas expiradas: {str(e)}")
+            return {
+                "status": 500,
+                "mensaje": "Error al eliminar cuentas expiradas.",
+                "data": None
+            }
+        finally:
+            self.cerrar_conexion()
+            log_info("Transacción de limpieza de usuarios expirados finalizada.")
+
 #-------------------------------------------------------------
 #                  Funciones Auxiliares
 #-------------------------------------------------------------

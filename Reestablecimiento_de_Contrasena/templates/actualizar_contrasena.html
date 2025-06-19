@@ -10,20 +10,25 @@
 <main>
   <div class="main active">
     <h2>Establecer Nueva Contraseña</h2>
-    <form id="form-cambiar-contrasena" method="POST" action="{{ url_for('reestablecer.cambiar_contrasena', token=token) }}">
+    <form id="form-cambiar-contrasena" method="POST" action="{{ url_for('reestablecer.cambiar_contrasena', token=token) }}" autocomplete="off">
       <div class="input-group">
-        <input id="nueva_contrasena" type="password" name="nueva_contrasena" placeholder="Nueva Contraseña" required>
+        <input id="nueva_contrasena" type="password" name="nueva_contrasena" placeholder="Nueva Contraseña" required aria-describedby="password-criteria">
         <button type="button" class="toggle-password" onclick="togglePassword(this, 'nueva_contrasena')">👁️</button>
       </div>
-
+      <ul id="password-criteria" class="criteria-list" aria-live="polite">
+        <li id="req-len">Entre 8 y 16 caracteres</li>
+        <li id="req-nocontrol">Sin espacios</li>
+        <li id="req-upper">Al menos una mayúscula</li>
+        <li id="req-num">Al menos un número</li>
+        <li id="req-special">Al menos un carácter especial</li>
+      </ul>
       <div class="input-group">
-        <input id="confirmar_contrasena" type="password" name="confirmar_contrasena" placeholder="Confirmar Nueva Contraseña" required>
+        <input id="confirmar_contrasena" type="password" name="confirmar_contrasena" placeholder="Confirmar Nueva Contraseña" required aria-describedby="coincidencia-msg">
         <button type="button" class="toggle-password" onclick="togglePassword(this, 'confirmar_contrasena')">👁️</button>
       </div>
-
-      <button type="submit" class="btn-principal">Restablecer Contraseña</button>
+      <p id="coincidencia-msg" class="coincidencia-text" aria-live="polite"></p>
+      <button type="submit" class="btn-principal" id="btn-restablecer">Restablecer Contraseña</button>
     </form>
-    
     <p id="msg-error" class="error-text {% if not mensaje %}hidden{% endif %}">
         {{ mensaje }}
     </p>

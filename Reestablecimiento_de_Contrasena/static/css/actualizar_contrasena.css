@@ -166,6 +166,38 @@ h2 {
     transform: translateX(-50%) translateY(0);
 }
 
+.criteria-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 0.95em;
+    width: 100%;
+    color: #555;
+}
+.criteria-list li {
+    margin: 3px 0;
+    transition: color 0.2s, text-decoration 0.2s;
+}
+.criteria-list li.ok {
+    color: #498205;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+.coincidencia-text {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #b80026;
+    min-height: 1.2em;
+    text-align: left;
+    width: 100%;
+}
+.coincidencia-text.ok {
+    color: #498205;
+    font-weight: bold;
+}
+
+
 /* Estilos responsive */
 @media (max-width: 500px) {
     .main {
