@@ -1,55 +1,93 @@
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  input, button {
-    width: 85%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: none;
-    box-sizing: border-box;
-  }
-  
-  input {
-    background-color: #e0dede;
-  }
-  
-  button {
-    background-color: #573b8a;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #6d44b8;
-  }
-  
-  .input-group {
-    position: relative;
-    width: 85%;
-  }
-  
-  .input-group input {
-    padding-right: 35px;
-  }
-  
-  .toggle-password {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .error-text {
-    color: crimson;
-    margin-top: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input, button {
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+input {
+  background-color: #e0dede;
+}
+
+button {
+  background-color: #573b8a;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #6d44b8;
+}
+
+.input-group {
+  position: relative;
+  width: 85%;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding-right: 35px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #573b8a;
+  outline: none;
+}
+
+.criteria-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 0.95em;
+  width: 85%;
+  color: #555;
+}
+.criteria-list li {
+  margin: 3px 0;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+.criteria-list li.ok {
+  color: #498205;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.coincidencia-text {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #b80026;
+  min-height: 1.2em;
+  text-align: left;
+  width: 85%;
+}
+.coincidencia-text.ok {
+  color: #498205;
+  font-weight: bold;
+}
+
+.error-text {
+  color: crimson;
+  margin-top: 10px;
+}
+.hidden {
+  display: none;
+}

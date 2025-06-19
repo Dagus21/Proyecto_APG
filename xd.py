@@ -1,8 +1,8 @@
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
 
+# Cargar las variables de entorno desde el archivo .env
 load_dotenv()
 
-# Verificar las variables de entorno
-print("MAIL_USERNAME:", os.getenv('MAIL_USERNAME'))  # Verifica el correo cargado
-print("MAIL_PASSWORD:", os.getenv('MAIL_PASSWORD'))  # Verifica la contraseña cargada
+# Verificar si la variable se está cargando correctamente
+print(os.getenv("DIRECCION_URL"))
